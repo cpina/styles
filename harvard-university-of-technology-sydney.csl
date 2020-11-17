@@ -111,7 +111,7 @@
   </macro>
   <macro name="publisher">
     <choose>
-      <if type="book broadcast article chapter dataset entry entry-dictionary entry-encyclopedia figure graphic interview legal_case map motion_picture musical_score pamphlet paper-conference patent personal_communication post post-weblog report review review-book song speech thesis webpage dataset" match="any">
+      <if type="book broadcast article chapter dataset entry entry-dictionary entry-encyclopedia figure graphic interview legal_case map motion_picture musical_score pamphlet paper-conference patent personal_communication post post-weblog report review review-book song speech thesis webpage" match="any">
         <group delimiter=", ">
           <text variable="publisher"/>
           <text variable="publisher-place"/>

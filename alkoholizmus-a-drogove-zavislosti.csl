@@ -279,7 +279,7 @@
           <choose>
             <if match="none" variable="author">
               <choose>
-                <if type="webpage dataset post post-weblog dataset" match="any">
+                <if type="webpage post post-weblog dataset" match="any">
                   <text variable="URL" form="short"/>
                 </if>
                 <else-if type="interview" match="any">

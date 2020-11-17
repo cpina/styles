@@ -102,7 +102,7 @@
           </choose>
         </group>
       </if>
-      <else-if type="bill book graphic legal_case legislation manuscript motion_picture report song speech webpage dataset thesis dataset" match="any">
+      <else-if type="bill book graphic legal_case legislation manuscript motion_picture report song speech webpage thesis dataset" match="any">
         <text variable="title" font-style="italic"/>
       </else-if>
       <else>
