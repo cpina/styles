@@ -28,7 +28,7 @@
   </macro>
   <macro name="author">
     <choose>
-      <if type="webpage" match="any">
+      <if type="webpage dataset" match="any">
         <names variable="author" prefix="Internet: ">
           <name and="text" initialize-with=". " name-as-sort-order="all"/>
           <label form="short" text-case="capitalize-first" prefix=", "/>
@@ -53,7 +53,7 @@
       <if type="article-journal chapter patent paper-conference report speech thesis" match="any">
         <text variable="title" text-case="capitalize-first" quotes="false"/>
       </if>
-      <else-if type="book webpage" match="any">
+      <else-if type="book webpage dataset" match="any">
         <text variable="title" text-case="title" quotes="false"/>
       </else-if>
     </choose>
@@ -117,7 +117,7 @@
               <date date-parts="year" form="text" variable="issued" prefix="(" suffix=")"/>
             </group>
           </else-if>
-          <else-if type="webpage" match="any">
+          <else-if type="webpage dataset" match="any">
             <text variable="URL" font-weight="bold" suffix=" "/>
             <date date-parts="year" form="text" variable="accessed" prefix="(" suffix=")"/>
           </else-if>

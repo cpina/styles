@@ -156,7 +156,7 @@
       </if>
       <else>
         <choose>
-          <if type="post post-weblog webpage" match="any">
+          <if type="post post-weblog webpage dataset" match="any">
             <group delimiter=" ">
               <text variable="URL" suffix="."/>
               <text prefix="(" text-case="capitalize-first" suffix=" " term="accessed"/>
@@ -237,7 +237,7 @@
           <text macro="edition"/>
         </group>
       </if>
-      <else-if type="post-weblog webpage" match="any">
+      <else-if type="post-weblog webpage dataset" match="any">
         <text variable="genre" prefix=" [" suffix="]"/>
       </else-if>
       <else-if variable="version">
@@ -457,7 +457,7 @@
           <text variable="page"/>
         </group>
       </else-if>
-      <else-if type="book graphic motion_picture report song paper-conference entry-encyclopedia entry-dictionary webpage post-weblog" match="any">
+      <else-if type="book graphic motion_picture report song paper-conference entry-encyclopedia entry-dictionary webpage dataset post-weblog" match="any">
         <group delimiter=", " prefix=", ">
           <choose>
             <if match="any" variable="volume">

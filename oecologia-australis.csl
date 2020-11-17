@@ -145,7 +145,7 @@
             </choose>
           </group>
         </if>
-        <else-if type="legislation webpage report" match="any">
+        <else-if type="legislation webpage dataset report" match="any">
           <group prefix="(" delimiter=" " suffix=").">
             <text value="Retrieved on"/>
             <date form="text" variable="accessed" suffix=",">
@@ -243,7 +243,7 @@
           <text macro="edition"/>
         </group>
       </if>
-      <else-if type="post-weblog webpage" match="any">
+      <else-if type="post-weblog webpage dataset" match="any">
         <text variable="genre" prefix=" [" suffix="]"/>
       </else-if>
       <else-if variable="version">

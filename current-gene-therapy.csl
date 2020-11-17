@@ -315,7 +315,7 @@
           <text macro="locator"/>
         </group>
         <choose>
-          <if type="webpage post-weblog" match="any">
+          <if type="webpage dataset post-weblog" match="any">
             <text macro="accessed"/>
             <text macro="url"/>
           </if>

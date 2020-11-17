@@ -149,7 +149,7 @@
           </if>
         </choose>
       </if>
-      <else-if type="webpage post post-weblog" match="any">
+      <else-if type="webpage dataset post post-weblog" match="any">
         <group delimiter=". ">
           <text variable="URL"/>
           <group delimiter=" ">

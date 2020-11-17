@@ -647,7 +647,7 @@
     <choose>
       <if variable="URL">
         <choose>
-          <if type="article-journal article-magazine article-newspaper webpage broadcast" match="any">
+          <if type="article-journal article-magazine article-newspaper webpage dataset broadcast" match="any">
             <group prefix=", ">
               <text variable="URL"/>
             </group>

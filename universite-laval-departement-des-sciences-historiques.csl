@@ -58,7 +58,7 @@
     <choose>
       <if variable="URL">
         <choose>
-          <if type="article-journal article-newspaper broadcast entry-encyclopedia figure graphic motion_picture patent post post-weblog song webpage" match="any">
+          <if type="article-journal article-newspaper broadcast entry-encyclopedia figure graphic motion_picture patent post post-weblog song webpage dataset" match="any">
             <group delimiter=", ">
               <text variable="URL"/>
               <group delimiter=" ">
@@ -97,7 +97,7 @@
   </macro>
   <macro name="journal-title">
     <choose>
-      <if type="article article-journal article-magazine article-newspaper chapter entry-encyclopedia entry-dictionary entry webpage paper-conference" match="any">
+      <if type="article article-journal article-magazine article-newspaper chapter entry-encyclopedia entry-dictionary entry webpage dataset paper-conference" match="any">
         <text variable="container-title" font-style="italic"/>
       </if>
     </choose>
@@ -156,7 +156,7 @@
   </macro>
   <macro name="pages-bibliography">
     <choose>
-      <if type="article article-journal article-magazine article-newspaper entry entry-dictionary entry-encyclopedia chapter paper-conference webpage" match="any">
+      <if type="article article-journal article-magazine article-newspaper entry entry-dictionary entry-encyclopedia chapter paper-conference webpage dataset" match="any">
         <label plural="never" suffix=" " variable="page" form="short"/>
         <text variable="page"/>
       </if>
@@ -192,7 +192,7 @@
             <text macro="author-citation"/>
             <text macro="title"/>
             <choose>
-              <if type="chapter paper-conference webpage entry entry-dictionary entry-encyclopedia" match="any">
+              <if type="chapter paper-conference webpage dataset entry entry-dictionary entry-encyclopedia" match="any">
                 <group delimiter=", ">
                   <text macro="editor-citation"/>
                   <text macro="journal-title"/>
@@ -276,7 +276,7 @@
         <text macro="author-bibliography"/>
         <text macro="title" strip-periods="false" font-weight="normal" vertical-align="baseline"/>
         <choose>
-          <if type="chapter paper-conference webpage entry entry-dictionary entry-encyclopedia" match="any">
+          <if type="chapter paper-conference webpage dataset entry entry-dictionary entry-encyclopedia" match="any">
             <group delimiter=". ">
               <text macro="editor-bibliography"/>
               <text macro="journal-title"/>

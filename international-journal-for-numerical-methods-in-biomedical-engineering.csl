@@ -179,7 +179,7 @@
             </else>
           </choose>
         </else-if>
-        <else-if type="webpage post-weblog" match="any">
+        <else-if type="webpage dataset post-weblog" match="any">
           <group delimiter=". " prefix=" ">
             <group delimiter=" ">
               <text variable="container-title"/>

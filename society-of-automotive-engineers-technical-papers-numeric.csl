@@ -40,7 +40,7 @@
           <date-part name="year"/>
         </date>
       </if>
-      <else-if variable="accessed" type="webpage" match="any">
+      <else-if variable="accessed" type="webpage dataset" match="any">
         <date variable="accessed" delimiter=" ">
           <date-part name="month" form="short"/>
           <date-part name="year"/>
@@ -50,7 +50,7 @@
   </macro>
   <macro name="title">
     <choose>
-      <if type="article-journal article-magazine article-newspaper book chapter paper-conference patent speech report thesis webpage" match="any">
+      <if type="article-journal article-magazine article-newspaper book chapter paper-conference patent speech report thesis webpage dataset" match="any">
         <text variable="title" quotes="true"/>
       </if>
       <else>
@@ -121,7 +121,7 @@
             <text variable="genre"/>
             <text macro="publisher"/>
           </else-if>
-          <else-if type="patent report webpage" match="any">
+          <else-if type="patent report webpage dataset" match="any">
             <group delimiter=" ">
               <text variable="genre"/>
               <text variable="number"/>

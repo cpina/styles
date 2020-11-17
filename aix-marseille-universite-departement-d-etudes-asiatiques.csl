@@ -133,7 +133,7 @@
           <text variable="container-title" text-case="capitalize-first" font-style="italic"/>
         </group>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <group delimiter=", ">
           <text variable="title" text-case="capitalize-first" quotes="true"/>
           <text variable="container-title" text-case="capitalize-first" font-style="italic"/>

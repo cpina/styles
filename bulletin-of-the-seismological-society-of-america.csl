@@ -116,7 +116,7 @@
   </macro>
   <macro name="accessed">
     <choose>
-      <if type="webpage post-weblog" match="any">
+      <if type="webpage dataset post-weblog" match="any">
         <choose>
           <if variable="URL">
             <text variable="URL" prefix=": &lt;" suffix="&gt;"/>
@@ -138,7 +138,7 @@
   </macro>
   <macro name="page">
     <choose>
-      <if type="article article-magazine article-newspaper article-journal bill book broadcast chapter entry entry-dictionary entry-encyclopedia figure graphic interview legislation legal_case manuscript map motion_picture musical_score pamphlet paper-conference patent post post-weblog personal_communication review review-book song speech thesis treaty webpage" match="any">
+      <if type="article article-magazine article-newspaper article-journal bill book broadcast chapter entry entry-dictionary entry-encyclopedia figure graphic interview legislation legal_case manuscript map motion_picture musical_score pamphlet paper-conference patent post post-weblog personal_communication review review-book song speech thesis treaty webpage dataset" match="any">
         <text variable="page"/>
       </if>
       <else>

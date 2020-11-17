@@ -79,7 +79,7 @@
       <if variable="DOI">
         <text variable="DOI" prefix="doi:"/>
       </if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <choose>
           <if variable="URL">
             <text variable="URL"/>

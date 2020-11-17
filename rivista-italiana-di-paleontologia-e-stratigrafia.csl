@@ -158,7 +158,7 @@
           <if variable="DOI"/>
           <else>
             <choose>
-              <if type="post post-weblog webpage" match="any">
+              <if type="post post-weblog webpage dataset" match="any">
                 <group delimiter=" ">
                   <text term="retrieved" text-case="capitalize-first" suffix=" "/>
                   <group>
@@ -242,7 +242,7 @@
           <text macro="edition"/>
         </group>
       </if>
-      <else-if type="post-weblog webpage" match="any">
+      <else-if type="post-weblog webpage dataset" match="any">
         <text variable="genre" prefix=" [" suffix="]"/>
       </else-if>
       <else-if variable="version">
@@ -365,7 +365,7 @@
                 <date-part prefix=", " name="month"/>
               </date>
             </if>
-            <else-if type="article article-magazine article-newspaper broadcast interview pamphlet personal_communication post post-weblog treaty webpage" match="any">
+            <else-if type="article article-magazine article-newspaper broadcast interview pamphlet personal_communication post post-weblog treaty webpage dataset" match="any">
               <date variable="issued">
                 <date-part prefix=", " name="month"/>
                 <date-part prefix=" " name="day"/>
@@ -390,7 +390,7 @@
   </macro>
   <macro name="issued-sort">
     <choose>
-      <if type="article article-magazine article-newspaper broadcast interview pamphlet personal_communication post post-weblog speech treaty webpage" match="any">
+      <if type="article article-magazine article-newspaper broadcast interview pamphlet personal_communication post post-weblog speech treaty webpage dataset" match="any">
         <date variable="issued">
           <date-part name="year"/>
           <date-part name="month"/>
@@ -465,7 +465,7 @@
           <date-part name="year"/>
         </date>
       </else-if>
-      <else-if type="article article-magazine article-newspaper broadcast interview pamphlet personal_communication post post-weblog treaty webpage" match="any">
+      <else-if type="article article-magazine article-newspaper broadcast interview pamphlet personal_communication post post-weblog treaty webpage dataset" match="any">
         <date variable="original-date" form="text"/>
       </else-if>
       <else>

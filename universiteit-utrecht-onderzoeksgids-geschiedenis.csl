@@ -285,7 +285,7 @@
           </else>
         </choose>
       </if>
-      <else-if type="bill book graphic legal_case motion_picture report song thesis webpage" match="any">
+      <else-if type="bill book graphic legal_case motion_picture report song thesis webpage dataset" match="any">
         <text variable="locator" prefix=" "/>
       </else-if>
       <else-if type="manuscript" match="any">
@@ -316,7 +316,7 @@
       <if variable="DOI">
         <text variable="DOI" prefix=" &lt;doi:" suffix="&gt;"/>
       </if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <group prefix=" [" suffix="]">
           <text variable="URL" prefix=", "/>
           <date form="text" variable="event-date" prefix=" (" suffix=")"/>

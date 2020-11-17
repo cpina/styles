@@ -340,7 +340,7 @@
   </macro>
   <macro name="date">
     <choose>
-      <if type="article-journal article-magazine webpage review review-book" match="any">
+      <if type="article-journal article-magazine webpage dataset review review-book" match="any">
         <group suffix=";" delimiter=" ">
           <date date-parts="year" form="text" variable="issued"/>
           <text macro="accessed-date"/>

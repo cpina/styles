@@ -434,7 +434,7 @@
         </else-if>
       </choose>
       <choose>
-        <if type="webpage post-weblog post" match="any">
+        <if type="webpage dataset post-weblog post" match="any">
           <text variable="URL"/>
         </if>
       </choose>

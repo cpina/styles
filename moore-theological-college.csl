@@ -529,7 +529,7 @@
   </macro>
   <macro name="issue-note">
     <choose>
-      <if type="article-journal webpage" match="any">
+      <if type="article-journal webpage dataset" match="any">
         <text variable="volume" prefix=" "/>
         <text variable="issue" prefix="/"/>
         <text macro="issued" prefix=" (" suffix=")"/>
@@ -564,7 +564,7 @@
   </macro>
   <macro name="issue">
     <choose>
-      <if type="article-journal webpage" match="any">
+      <if type="article-journal webpage dataset" match="any">
         <text macro="issued" prefix=" (" suffix=")"/>
       </if>
       <else-if type="speech">
@@ -606,7 +606,7 @@
         </else-if>
       </choose>
       <choose>
-        <if type="webpage" match="any">
+        <if type="webpage dataset" match="any">
           <date variable="accessed" prefix="Cited ">
             <date-part name="day" form="numeric" suffix=" "/>
             <date-part name="month" form="short" suffix=" "/>
@@ -628,7 +628,7 @@
         </else-if>
       </choose>
       <choose>
-        <if type="webpage" match="any">
+        <if type="webpage dataset" match="any">
           <date variable="accessed" prefix="Cited ">
             <date-part name="day" form="numeric" suffix=" "/>
             <date-part name="month" form="short" suffix=" "/>

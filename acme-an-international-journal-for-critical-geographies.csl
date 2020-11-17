@@ -202,7 +202,7 @@
           </group>
         </group>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <text variable="URL" prefix=". "/>
       </else-if>
     </choose>

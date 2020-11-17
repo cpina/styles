@@ -52,7 +52,7 @@
         <text variable="genre" suffix=" "/>
         <text variable="number"/>
       </if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <text variable="title" prefix="&quot;" suffix="&quot;"/>
       </else-if>
       <else>
@@ -110,7 +110,7 @@
       <else-if type="personal_communication" match="any">
         <text value="persönliche Mitteilung"/>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <text term="accessed"/>
         <date form="text" variable="accessed"/>
       </else-if>
@@ -148,7 +148,7 @@
               <text variable="number"/>
             </group>
           </if>
-          <else-if type="webpage" match="any">
+          <else-if type="webpage dataset" match="any">
             <text variable="title"/>
           </else-if>
           <else>
@@ -157,7 +157,7 @@
         </choose>
         <text macro="issued-year-bib" prefix="(" suffix="):"/>
         <choose>
-          <if type="webpage" match="any">
+          <if type="webpage dataset" match="any">
             <text variable="URL"/>
           </if>
           <else>

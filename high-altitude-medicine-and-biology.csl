@@ -112,7 +112,7 @@
             <text variable="genre" suffix="."/>
             <text variable="publisher"/>
           </else-if>
-          <else-if type="webpage post-weblog" match="any">
+          <else-if type="webpage dataset post-weblog" match="any">
             <text variable="title" suffix="."/>
             <text variable="container-title" suffix="."/>
             <date variable="issued">

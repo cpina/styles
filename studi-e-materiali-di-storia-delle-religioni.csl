@@ -80,7 +80,7 @@
       <if variable="DOI"/>
       <else>
         <choose>
-          <if type="webpage post-weblog post" match="any">
+          <if type="webpage dataset post-weblog post" match="any">
             <group delimiter=" ">
               <text variable="URL" prefix="URL: &lt;" suffix="&gt;"/>
               <group prefix="(" suffix=")">
@@ -337,7 +337,7 @@
       <else-if type="report" match="any">
         <text variable="page" prefix=", " suffix=" p."/>
       </else-if>
-      <else-if type="webpage post post-weblog" match="any">
+      <else-if type="webpage dataset post post-weblog" match="any">
         <text macro="access" prefix=", "/>
       </else-if>
     </choose>

@@ -294,7 +294,7 @@
       <group delimiter=" ; " suffix=":">
         <text macro="author"/>
         <choose>
-          <if type="bill book graphic legal_case legislation manuscript map motion_picture report song thesis webpage" match="any">
+          <if type="bill book graphic legal_case legislation manuscript map motion_picture report song thesis webpage dataset" match="any">
             <!-- except type="chapter article " etc.... -->
             <text macro="editor"/>
             <text macro="editor-collection"/>
@@ -361,7 +361,7 @@
           <text macro="bibliography-year" prefix=", "/>
           <text prefix=". &#8212;&#160;" variable="note"/>
         </else-if>
-        <else-if type="webpage post post-weblog" match="any">
+        <else-if type="webpage dataset post post-weblog" match="any">
           <text prefix=" " macro="title" suffix=". " font-style="italic"/>
           <text prefix="URL " variable="URL"/>
           <text prefix=". - " macro="access"/>

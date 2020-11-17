@@ -51,7 +51,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage report" match="any">
+      <if type="webpage dataset report" match="any">
         <text variable="URL" prefix="available at "/>
         <group prefix=" (" suffix=")">
           <text term="accessed" text-case="lowercase" suffix=" "/>

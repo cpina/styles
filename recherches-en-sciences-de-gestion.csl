@@ -134,7 +134,7 @@
         </else-if>
       </choose>
       <choose>
-        <if type="webpage post-weblog" match="any">
+        <if type="webpage dataset post-weblog" match="any">
           <date variable="issued" delimiter=" ">
             <date-part name="month"/>
             <date-part name="day"/>

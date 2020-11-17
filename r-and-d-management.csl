@@ -394,7 +394,7 @@
             <text macro="container-title" prefix="(" suffix=")"/>
           </group>
         </else-if>
-        <else-if type="webpage personal_communication post post-weblog" match="any">
+        <else-if type="webpage dataset personal_communication post post-weblog" match="any">
           <text macro="author-short" suffix=". "/>
           <choose>
             <if variable="issued">

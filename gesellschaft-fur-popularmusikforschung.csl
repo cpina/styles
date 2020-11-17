@@ -68,7 +68,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage" match="any">
+      <if type="webpage dataset" match="any">
         <group>
           <group>
             <text variable="URL" prefix=" " suffix=" "/>

@@ -170,7 +170,7 @@
             <text macro="issued"/>
           </group>
         </else-if>
-        <else-if type="webpage post-weblog" match="any">
+        <else-if type="webpage dataset post-weblog" match="any">
           <group delimiter=", ">
             <text macro="title"/>
             <text variable="URL"/>

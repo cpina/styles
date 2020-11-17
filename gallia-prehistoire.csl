@@ -130,7 +130,7 @@
           <text variable="container-title" quotes="true" vertical-align="baseline"/>
         </group>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <group>
           <text variable="title" text-case="capitalize-first" suffix=", "/>
           <text variable="container-title" text-case="capitalize-first" font-style="italic" suffix=", "/>
@@ -316,7 +316,7 @@
             <text macro="author-opcit"/>
           </group>
         </else-if>
-        <else-if type="webpage" match="any">
+        <else-if type="webpage dataset" match="any">
           <text variable="URL" form="short" text-decoration="underline"/>
         </else-if>
         <else>

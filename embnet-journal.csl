@@ -118,7 +118,7 @@
             </group>
           </group>
         </else-if>
-        <else-if type="webpage post-weblog article-magazine article-newspaper post report" match="any">
+        <else-if type="webpage dataset post-weblog article-magazine article-newspaper post report" match="any">
           <text variable="title" prefix=" " suffix="."/>
           <text variable="publisher" font-style="italic" prefix=" "/>
           <text variable="issue" font-weight="bold" prefix=" " suffix="."/>

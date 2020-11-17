@@ -131,7 +131,7 @@
       <if type="article-journal" match="any">
         <text variable="DOI" prefix="DOI: "/>
       </if>
-      <else-if type="webpage post post-weblog" match="any">
+      <else-if type="webpage dataset post post-weblog" match="any">
         <group delimiter=". ">
           <group delimiter=": ">
             <text term="available at" text-case="capitalize-first"/>

@@ -167,7 +167,7 @@
               <text macro="publisher"/>
             </group>
           </else-if>
-          <else-if type="webpage post post-weblog" match="any">
+          <else-if type="webpage dataset post post-weblog" match="any">
             <group>
               <text variable="title" font-style="italic" suffix=". "/>
               <text variable="container-title" form="long" suffix=". "/>

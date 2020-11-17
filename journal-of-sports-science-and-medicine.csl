@@ -151,7 +151,7 @@
               <text variable="page" suffix="."/>
             </group>
           </else-if>
-          <else-if type="webpage post post-weblog" match="any">
+          <else-if type="webpage dataset post post-weblog" match="any">
             <group prefix=" " delimiter=". ">
               <text variable="container-title"/>
               <group delimiter=" ">

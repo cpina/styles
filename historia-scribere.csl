@@ -102,7 +102,7 @@
           <name et-al-min="2" et-al-use-first="1"/>
         </names>
       </else-if>
-      <else-if type="report song broadcast motion_picture webpage post post-weblog" match="any">
+      <else-if type="report song broadcast motion_picture webpage dataset post post-weblog" match="any">
         <text variable="collection-title"/>
         <text variable="container-title"/>
       </else-if>
@@ -134,7 +134,7 @@
       <if type="chapter paper-conference entry-encyclopedia entry-dictionary article-journal" match="any">
         <text variable="container-title" font-style="normal"/>
       </if>
-      <else-if type="report song broadcast motion_picture webpage post post-weblog" match="any">
+      <else-if type="report song broadcast motion_picture webpage dataset post post-weblog" match="any">
         <group delimiter=", ">
           <text variable="genre"/>
           <text variable="collection-title"/>
@@ -265,7 +265,7 @@
               </else>
             </choose>
           </else-if>
-          <else-if type="webpage post-weblog" match="any">
+          <else-if type="webpage dataset post-weblog" match="any">
             <date variable="issued">
               <date-part name="day" suffix=". "/>
               <date-part name="month" form="numeric" suffix=". "/>
@@ -325,7 +325,7 @@
   </macro>
   <macro name="url-web-documents-only">
     <choose>
-      <if type="webpage post post-weblog" match="any">
+      <if type="webpage dataset post post-weblog" match="any">
         <text macro="url"/>
       </if>
     </choose>

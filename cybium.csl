@@ -114,7 +114,7 @@
           <text macro="number-of-pages"/>
         </group>
       </else-if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <text variable="title"/>
         <text value="WWW Document" prefix=" [" suffix="]"/>
       </else-if>

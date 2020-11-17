@@ -103,7 +103,7 @@
           <text variable="container-title" text-case="capitalize-first" font-style="italic"/>
         </group>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <group delimiter="">
           <text variable="title" text-case="capitalize-first" font-style="italic" suffix=", "/>
           <text variable="URL" text-decoration="underline"/>
@@ -187,7 +187,7 @@
           <date-part name="year"/>
         </date>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <group delimiter=" ">
           <text value="consulté le" prefix=" "/>
           <date variable="accessed" form="text">

@@ -214,7 +214,7 @@
           <text variable="container-title" font-style="italic"/>
         </group>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <group>
           <text variable="title" text-case="capitalize-first" font-style="italic" suffix=", "/>
           <text term="online" prefix="document " suffix=",&#160;"/>
@@ -350,7 +350,7 @@
           </group>
         </group>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <group delimiter=" " font-style="normal">
           <date variable="issued">
             <date-part name="year"/>

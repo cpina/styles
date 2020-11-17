@@ -76,7 +76,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage post-weblog" match="any">
+      <if type="webpage dataset post-weblog" match="any">
         <choose>
           <if variable="URL">
             <group delimiter=": ">
@@ -111,7 +111,7 @@
             </else>
           </choose>
           <choose>
-            <if type="webpage post-weblog" match="any">
+            <if type="webpage dataset post-weblog" match="any">
               <choose>
                 <if variable="URL">
                   <text term="internet" prefix="[" suffix="]" text-case="capitalize-first"/>

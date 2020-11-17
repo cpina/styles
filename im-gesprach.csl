@@ -102,7 +102,7 @@
   </macro>
   <macro name="pages">
     <choose>
-      <if type="article-journal article-magazine article-newspaper broadcast thesis webpage chapter paper-conference" match="any">
+      <if type="article-journal article-magazine article-newspaper broadcast thesis webpage dataset chapter paper-conference" match="any">
         <label prefix=", " suffix=" " variable="page" form="short"/>
         <text variable="page"/>
         <text variable="note" prefix=" [erstmals " suffix="]"/>
@@ -324,7 +324,7 @@
             <text macro="pages"/>
           </group>
         </else-if>
-        <else-if type="webpage" match="any">
+        <else-if type="webpage dataset" match="any">
           <group>
             <text macro="author"/>
             <text variable="title" suffix=". "/>

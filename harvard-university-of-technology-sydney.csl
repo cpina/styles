@@ -49,7 +49,7 @@
       <else-if type="bill" match="any">
         <text suffix=" " variable="title"/>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <choose>
           <if match="any" variable="container-title">
             <text variable="title" quotes="true"/>
@@ -91,7 +91,7 @@
       <else-if type="bill" match="any">
         <text variable="title"/>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <choose>
           <if match="any" variable="container-title">
             <text variable="title" font-style="normal" quotes="true"/>
@@ -111,7 +111,7 @@
   </macro>
   <macro name="publisher">
     <choose>
-      <if type="book broadcast article chapter dataset entry entry-dictionary entry-encyclopedia figure graphic interview legal_case map motion_picture musical_score pamphlet paper-conference patent personal_communication post post-weblog report review review-book song speech thesis webpage" match="any">
+      <if type="book broadcast article chapter dataset entry entry-dictionary entry-encyclopedia figure graphic interview legal_case map motion_picture musical_score pamphlet paper-conference patent personal_communication post post-weblog report review review-book song speech thesis webpage dataset" match="any">
         <group delimiter=", ">
           <text variable="publisher"/>
           <text variable="publisher-place"/>

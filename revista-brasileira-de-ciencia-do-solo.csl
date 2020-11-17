@@ -160,7 +160,7 @@
       <if variable="DOI">
         <text variable="DOI" prefix="https://doi.org/"/>
       </if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <choose>
           <if variable="URL">
             <text variable="URL" prefix="Available from: " suffix="."/>
@@ -302,7 +302,7 @@
         </else>
       </choose>
       <choose>
-        <if type="paper-conference webpage" match="any">
+        <if type="paper-conference webpage dataset" match="any">
           <text macro="access"/>
         </if>
         <else>

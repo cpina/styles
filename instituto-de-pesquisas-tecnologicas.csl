@@ -194,7 +194,7 @@
             </date>
           </group>
         </else-if>
-        <else-if type="webpage" match="any">
+        <else-if type="webpage dataset" match="any">
           <group delimiter=" ">
             <names variable="author" suffix=".">
               <name delimiter="; " initialize-with=". " name-as-sort-order="all">

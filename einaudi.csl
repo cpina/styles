@@ -227,7 +227,7 @@
               <text macro="page"/>
             </group>
           </else-if>
-          <else-if type="webpage post-weblog post" match="any">
+          <else-if type="webpage dataset post-weblog post" match="any">
             <group delimiter=", ">
               <text variable="title"/>
               <text variable="container-title"/>

@@ -133,7 +133,7 @@
               <text macro="publisher" prefix=" "/>
             </group>
           </else-if>
-          <else-if type="webpage post post-weblog" match="any">
+          <else-if type="webpage dataset post post-weblog" match="any">
             <text macro="access"/>
           </else-if>
           <else>

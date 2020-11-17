@@ -24,7 +24,7 @@
   </locale>
   <macro name="access">
     <choose>
-      <if type="webpage post-weblog report manuscript" match="any">
+      <if type="webpage dataset post-weblog report manuscript" match="any">
         <choose>
           <if variable="URL">
             <group delimiter=". ">
@@ -181,7 +181,7 @@
             <text macro="year-date"/>
           </group>
         </else-if>
-        <else-if type="webpage post-weblog" match="any">
+        <else-if type="webpage dataset post-weblog" match="any">
           <group delimiter=" ">
             <text variable="title" quotes="true" suffix="."/>
             <text variable="container-title" form="long" suffix="." text-case="title"/>

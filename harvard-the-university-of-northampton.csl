@@ -49,7 +49,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage post-weblog post graphic" match="any">
+      <if type="webpage dataset post-weblog post graphic" match="any">
         <choose>
           <if variable="URL">
             <text value="[online]. Available from:" suffix=" "/>

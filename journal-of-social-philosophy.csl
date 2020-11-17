@@ -53,7 +53,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="entry-dictionary post-weblog entry-encyclopedia interview webpage post" match="any">
+      <if type="entry-dictionary post-weblog entry-encyclopedia interview webpage dataset post" match="any">
         <group delimiter=", ">
           <group delimiter=" " prefix=" ">
             <text term="cited" text-case="capitalize-first" suffix=" "/>
@@ -183,7 +183,7 @@
           <text macro="title" prefix=" "/>
           <date form="numeric" variable="issued" prefix=" "/>
         </else-if>
-        <else-if type="webpage post-weblog" match="any">
+        <else-if type="webpage dataset post-weblog" match="any">
           <group delimiter=". " prefix=" ">
             <text variable="title"/>
             <text variable="container-title" font-style="italic"/>

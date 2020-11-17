@@ -449,7 +449,7 @@
                 <text macro="point-locators"/>
               </group>
             </else-if>
-            <else-if type="webpage post" match="any">
+            <else-if type="webpage dataset post" match="any">
               <group delimiter=", ">
                 <text macro="contributors"/>
                 <text macro="title"/>

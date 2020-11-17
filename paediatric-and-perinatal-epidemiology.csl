@@ -157,7 +157,7 @@
             </else>
           </choose>
         </else-if>
-        <else-if type="webpage post-weblog" match="any">
+        <else-if type="webpage dataset post-weblog" match="any">
           <group delimiter=" " prefix=" ">
             <text variable="URL"/>
             <group delimiter=" " prefix="(" suffix=")">

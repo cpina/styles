@@ -129,7 +129,7 @@
       <if type="book" match="any">
         <text variable="title" font-style="italic" text-case="capitalize-first"/>
       </if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <text variable="title" text-case="title"/>
       </else-if>
       <else-if variable="container-title" match="none">
@@ -224,7 +224,7 @@
               <text macro="year-date"/>
             </group>
           </if>
-          <else-if type="webpage post-weblog" match="any">
+          <else-if type="webpage dataset post-weblog" match="any">
             <group delimiter=", ">
               <text macro="title" quotes="true"/>
               <text variable="container-title" font-style="italic"/>

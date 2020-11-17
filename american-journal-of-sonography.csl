@@ -46,7 +46,7 @@
       <if type="article-journal">
         <text variable="DOI" prefix="DOI:"/>
       </if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <group delimiter=". ">
           <date variable="accessed" prefix="(" suffix=")">
             <date-part name="month" suffix=" "/>

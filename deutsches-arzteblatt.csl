@@ -75,7 +75,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage post post-weblog" match="any">
+      <if type="webpage dataset post post-weblog" match="any">
         <group delimiter=" ">
           <text variable="URL"/>
           <text macro="accessed-date" prefix=" "/>

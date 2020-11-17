@@ -239,7 +239,7 @@
             </group>
           </group>
         </else-if>
-        <else-if type="post-weblog webpage post" match="any">
+        <else-if type="post-weblog webpage dataset post" match="any">
           <group delimiter=". ">
             <text macro="title"/>
             <text variable="genre"/>

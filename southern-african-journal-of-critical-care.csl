@@ -134,7 +134,7 @@
             <text macro="year-date"/>
           </group>
         </else-if>
-        <else-if type="webpage post-weblog" match="any">
+        <else-if type="webpage dataset post-weblog" match="any">
           <text variable="container-title" form="short" prefix=". "/>
           <group prefix=". " delimiter=". ">
             <text variable="URL"/>

@@ -153,7 +153,7 @@
   </macro>
   <macro name="journal-title">
     <choose>
-      <if type="chapter paper-conference article-journal article-magazine article-newspaper webpage" match="any">
+      <if type="chapter paper-conference article-journal article-magazine article-newspaper webpage dataset" match="any">
         <group>
           <text variable="container-title" font-style="italic" text-case="capitalize-first"/>
         </group>
@@ -300,7 +300,7 @@
             </group>
           </else-if>
           <!-- page web -->
-          <else-if type="webpage" match="any">
+          <else-if type="webpage dataset" match="any">
             <group prefix=" " delimiter=", " suffix=". ">
               <text macro="editor"/>
               <text macro="journal-title"/>

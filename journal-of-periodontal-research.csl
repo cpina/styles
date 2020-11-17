@@ -134,7 +134,7 @@
             <text variable="genre" text-case="capitalize-first"/>
           </group>
         </else-if>
-        <else-if type="post-weblog webpage" match="any">
+        <else-if type="post-weblog webpage dataset" match="any">
           <group prefix=". ">
             <text variable="container-title"/>
             <group delimiter=": ">

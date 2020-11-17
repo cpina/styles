@@ -141,7 +141,7 @@
       </if>
       <else>
         <choose>
-          <if type="post post-weblog webpage" match="any">
+          <if type="post post-weblog webpage dataset" match="any">
             <group delimiter=" ">
               <text term="available at" text-case="capitalize-first" suffix=" "/>
               <text variable="URL"/>
@@ -220,7 +220,7 @@
           <text macro="edition"/>
         </group>
       </if>
-      <else-if type="post-weblog webpage" match="any">
+      <else-if type="post-weblog webpage dataset" match="any">
         <text variable="genre" prefix=" [" suffix="]"/>
       </else-if>
       <else-if variable="version">

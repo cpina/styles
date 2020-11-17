@@ -128,7 +128,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="post post-weblog webpage" match="any">
+      <if type="post post-weblog webpage dataset" match="any">
         <choose>
           <if variable="URL">
             <text value="viewed"/>

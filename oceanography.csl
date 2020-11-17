@@ -98,7 +98,7 @@
   </macro>
   <macro name="website-title">
     <choose>
-      <if type="webpage" match="any">
+      <if type="webpage dataset" match="any">
         <text variable="title"/>
       </if>
     </choose>
@@ -213,7 +213,7 @@
               </group>
             </group>
           </else-if>
-          <else-if type="webpage" match="any">
+          <else-if type="webpage dataset" match="any">
             <group delimiter=". ">
               <text variable="title"/>
               <choose>

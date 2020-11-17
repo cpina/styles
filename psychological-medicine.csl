@@ -186,7 +186,7 @@
           </else-if>
         </choose>
       </if>
-      <else-if type="webpage post post-weblog" match="any">
+      <else-if type="webpage dataset post post-weblog" match="any">
         <text variable="container-title"/>
       </else-if>
       <else>
@@ -249,7 +249,7 @@
                   </choose>
                 </group>
               </if>
-              <else-if type="webpage post post-weblog" match="any">
+              <else-if type="webpage dataset post post-weblog" match="any">
                 <group delimiter=". ">
                   <text macro="container"/>
                   <text macro="access"/>

@@ -35,7 +35,7 @@
       <substitute>
         <names variable="editor"/>
         <choose>
-          <if type="article-journal article-magazine article-newspaper paper-conference webpage" match="any">
+          <if type="article-journal article-magazine article-newspaper paper-conference webpage dataset" match="any">
             <text variable="container-title"/>
           </if>
         </choose>
@@ -44,7 +44,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage post post-weblog" match="any">
+      <if type="webpage dataset post post-weblog" match="any">
         <group delimiter=" ">
           <text term="retrieved" text-case="capitalize-first"/>
           <text term="from"/>
@@ -269,7 +269,7 @@
     <layout>
       <group suffix=".">
         <choose>
-          <if type="webpage" match="any">
+          <if type="webpage dataset" match="any">
             <group delimiter=" ">
               <text macro="author"/>
               <text macro="issued" suffix="."/>

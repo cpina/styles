@@ -179,7 +179,7 @@
             <text variable="publisher-place" suffix="."/>
           </group>
         </else-if>
-        <else-if type="webpage post-weblog" match="any">
+        <else-if type="webpage dataset post-weblog" match="any">
           <group suffix=".">
             <group>
               <text term="online"/>

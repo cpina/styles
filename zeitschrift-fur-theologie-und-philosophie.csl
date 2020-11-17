@@ -255,7 +255,7 @@
           <text macro="title"/>
           <text macro="original-date"/>
           <choose>
-            <if type="article-newspaper article-magazine chapter manuscript speech post-weblog webpage" match="any">
+            <if type="article-newspaper article-magazine chapter manuscript speech post-weblog webpage dataset" match="any">
               <text macro="translator-init" prefix=", "/>
             </if>
             <else-if type="article-journal entry-dictionary entry-encyclopedia" match="any">
@@ -265,13 +265,13 @@
             </else-if>
           </choose>
           <choose>
-            <if type="article-newspaper article-magazine post-weblog webpage" match="any">
+            <if type="article-newspaper article-magazine post-weblog webpage dataset" match="any">
               <text term="in" prefix=", " suffix=": "/>
               <text variable="container-title"/>
             </if>
           </choose>
           <choose>
-            <if type="webpage post-weblog" match="any">
+            <if type="webpage dataset post-weblog" match="any">
               <text variable="genre" prefix=". "/>
               <group delimiter=" " prefix=", ">
                 <text term="accessed"/>
@@ -362,7 +362,7 @@
       <text macro="title"/>
       <text macro="original-date"/>
       <choose>
-        <if type="webpage post-weblog speech manuscript article-newspaper article-magazine chapter" match="any">
+        <if type="webpage dataset post-weblog speech manuscript article-newspaper article-magazine chapter" match="any">
           <text macro="translator" prefix=", "/>
         </if>
         <else-if type="article-journal entry-dictionary entry-encyclopedia" match="any">
@@ -370,13 +370,13 @@
         </else-if>
       </choose>
       <choose>
-        <if type="webpage post-weblog article-newspaper article-magazine article-journal entry-dictionary entry-encyclopedia" match="any">
+        <if type="webpage dataset post-weblog article-newspaper article-magazine article-journal entry-dictionary entry-encyclopedia" match="any">
           <text term="in" prefix=", " suffix=": "/>
           <text variable="container-title" form="short"/>
         </if>
       </choose>
       <choose>
-        <if type="webpage post-weblog" match="any">
+        <if type="webpage dataset post-weblog" match="any">
           <text variable="genre" prefix=". "/>
           <group delimiter=" " prefix=", ">
             <text term="accessed"/>

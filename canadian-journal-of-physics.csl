@@ -127,7 +127,7 @@
             <text macro="editor"/>
             <text variable="container-title" form="short" suffix=". "/>
             <choose>
-              <if type="webpage post-weblog" match="any">
+              <if type="webpage dataset post-weblog" match="any">
                 <text variable="URL"/>
               </if>
             </choose>

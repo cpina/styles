@@ -208,7 +208,7 @@
       <group suffix=". ">
         <text macro="author"/>
         <choose>
-          <if type="webpage" match="any">
+          <if type="webpage dataset" match="any">
             <text value=": "/>
           </if>
           <else>

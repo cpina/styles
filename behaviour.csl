@@ -270,7 +270,7 @@
           <date-part name="year"/>
         </date>
       </else-if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <text variable="URL" prefix=". "/>
       </else-if>
     </choose>

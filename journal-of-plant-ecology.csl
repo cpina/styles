@@ -158,7 +158,7 @@
               </group>
             </group>
           </else-if>
-          <else-if type="webpage post-weblog post" match="any">
+          <else-if type="webpage dataset post-weblog post" match="any">
             <group delimiter=". ">
               <text variable="container-title" font-style="italic"/>
               <group delimiter=" ">

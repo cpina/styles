@@ -55,7 +55,7 @@
           </group>
         </group>
       </if>
-      <else-if type="report webpage post post-weblog" match="any">
+      <else-if type="report webpage dataset post post-weblog" match="any">
         <group delimiter=" ">
           <text variable="URL"/>
           <date date-parts="year" form="text" variable="issued" prefix="(" suffix=")"/>

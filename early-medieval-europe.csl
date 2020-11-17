@@ -173,7 +173,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage" match="any">
+      <if type="webpage dataset" match="any">
         <choose>
           <if variable="URL" match="any">
             <text variable="URL" prefix=" " suffix=", "/>

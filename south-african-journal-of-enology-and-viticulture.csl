@@ -57,7 +57,7 @@
         <names variable="editor"/>
         <names variable="translator"/>
         <choose>
-          <if type="bill book graphic legal_case legislation motion_picture report song webpage" match="any">
+          <if type="bill book graphic legal_case legislation motion_picture report song webpage dataset" match="any">
             <text variable="title" font-style="italic"/>
           </if>
           <else>
@@ -136,7 +136,7 @@
   </macro>
   <macro name="title">
     <choose>
-      <if type="bill book graphic legal_case legislation motion_picture report song webpage" match="any">
+      <if type="bill book graphic legal_case legislation motion_picture report song webpage dataset" match="any">
         <text variable="title" font-style="normal"/>
       </if>
       <else>
@@ -266,7 +266,7 @@
               <text variable="authority"/>
             </group>
           </else-if>
-          <else-if type="webpage post-weblog" match="any">
+          <else-if type="webpage dataset post-weblog" match="any">
             <text macro="title"/>
             <text term="available at" text-case="capitalize-first"/>
             <text variable="URL"/>

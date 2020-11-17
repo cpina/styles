@@ -174,7 +174,7 @@
           <text variable="number"/>
           <text macro="issued"/>
         </else-if>
-        <else-if type="article webpage" match="any">
+        <else-if type="article webpage dataset" match="any">
           <group delimiter=". ">
             <text macro="title" text-case="title"/>
             <text variable="container-title" font-style="italic"/>

@@ -64,7 +64,7 @@
       <if type="book" match="any">
         <text variable="title" quotes="false" font-style="italic"/>
       </if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <text variable="title" quotes="true"/>
       </else-if>
       <else>
@@ -86,7 +86,7 @@
           <date-part name="year"/>
         </date>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <date variable="accessed">
           <date-part name="day" suffix=" "/>
           <date-part name="month" suffix=", "/>
@@ -228,7 +228,7 @@
             <text macro="issued"/>
           </group>
         </else-if>
-        <else-if type="webpage" match="any">
+        <else-if type="webpage dataset" match="any">
           <group delimiter=".">
             <text macro="title"/>
             <group delimiter=", ">

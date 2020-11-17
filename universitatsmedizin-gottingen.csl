@@ -107,7 +107,7 @@
   </macro>
   <macro name="sort-key">
     <choose>
-      <if type="webpage post-weblog" match="any">
+      <if type="webpage dataset post-weblog" match="any">
         <text value="2"/>
       </if>
       <else>
@@ -196,7 +196,7 @@
             </group>
           </group>
         </else-if>
-        <else-if type="webpage post-weblog" match="any">
+        <else-if type="webpage dataset post-weblog" match="any">
           <choose>
             <if variable="author editor translator title" match="any">
               <text macro="access" prefix=". "/>

@@ -182,7 +182,7 @@
             </date>
           </group>
         </else-if>
-        <else-if type="webpage post-weblog" match="any">
+        <else-if type="webpage dataset post-weblog" match="any">
           <text term="available at" text-case="capitalize-first" prefix=" "/>
           <text variable="URL" prefix=" " suffix="."/>
           <group delimiter=" " prefix=" " suffix=".">

@@ -81,7 +81,7 @@
       <if variable="DOI">
         <text variable="DOI" prefix="doi:"/>
       </if>
-      <else-if type="post post-weblog webpage" match="any">
+      <else-if type="post post-weblog webpage dataset" match="any">
         <group delimiter=" ">
           <group delimiter=": ">
             <text term="available at" text-case="capitalize-first"/>
@@ -110,7 +110,7 @@
           <text macro="edition"/>
         </group>
       </else-if>
-      <else-if type="webpage post post-weblog" match="any">
+      <else-if type="webpage dataset post post-weblog" match="any">
         <text variable="title"/>
       </else-if>
       <else>

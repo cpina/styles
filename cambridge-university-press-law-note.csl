@@ -94,7 +94,7 @@
   </macro>
   <macro name="date">
     <choose>
-      <if type="webpage post-weblog" match="any">
+      <if type="webpage dataset post-weblog" match="any">
         <date date-parts="year-month" form="text" variable="issued"/>
       </if>
       <else>
@@ -295,7 +295,7 @@
                 </group>
               </group>
             </else-if>
-            <else-if type="webpage post-weblog" match="any">
+            <else-if type="webpage dataset post-weblog" match="any">
               <group delimiter=", ">
                 <group delimiter=", ">
                   <text macro="date"/>

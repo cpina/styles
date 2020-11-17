@@ -127,7 +127,7 @@
         <text macro="publisher"/>
         <text macro="pages"/>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <group>
           <text value="Available from "/>
           <text variable="URL"/>

@@ -50,7 +50,7 @@
       <if match="any" type="article-journal">
         <text variable="DOI" prefix="doi: "/>
       </if>
-      <else-if type="webpage post post-weblog" match="any">
+      <else-if type="webpage dataset post post-weblog" match="any">
         <group delimiter=". ">
           <group delimiter=": ">
             <text term="available at" text-case="capitalize-first"/>

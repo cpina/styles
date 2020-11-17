@@ -124,7 +124,7 @@
                   <text variable="archive" suffix="."/>
                 </group>
               </if>
-              <else-if type="post-weblog post webpage report" match="any">
+              <else-if type="post-weblog post webpage dataset report" match="any">
                 <group>
                   <text term="retrieved" text-case="capitalize-first" suffix=" "/>
                   <date variable="accessed" suffix=", ">

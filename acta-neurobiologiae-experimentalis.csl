@@ -99,7 +99,7 @@
               <text variable="page" prefix=": "/>
             </group>
           </else-if>
-          <else-if type="webpage post-weblog" match="any">
+          <else-if type="webpage dataset post-weblog" match="any">
             <text variable="container-title" suffix="."/>
             <text variable="URL" suffix="."/>
             <text term="accessed" text-case="capitalize-first"/>

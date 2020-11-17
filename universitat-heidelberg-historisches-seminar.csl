@@ -210,7 +210,7 @@
           <text variable="page"/>
         </group>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <group delimiter=" " font-style="normal">
           <date variable="accessed" form="numeric" prefix="(" suffix=")">
             <date-part name="day" form="numeric"/>

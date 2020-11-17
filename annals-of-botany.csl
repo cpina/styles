@@ -104,7 +104,7 @@
           </group>
           <text prefix=" " suffix="." macro="publisher"/>
         </if>
-        <else-if type="webpage" match="any">
+        <else-if type="webpage dataset" match="any">
           <group delimiter=". " prefix=" " suffix=".">
             <text macro="title" font-style="italic"/>
             <text variable="URL"/>

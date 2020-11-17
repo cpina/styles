@@ -49,7 +49,7 @@
       <if variable="DOI">
         <text variable="DOI" prefix=" doi : "/>
       </if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <group delimiter=" ">
           <text variable="URL"/>
           <group>

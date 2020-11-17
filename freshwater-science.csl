@@ -76,7 +76,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage post post-weblog report" match="any">
+      <if type="webpage dataset post post-weblog report" match="any">
         <group delimiter=": " prefix="(" suffix=")">
           <text term="available at" text-case="capitalize-first"/>
           <text variable="URL"/>
@@ -162,7 +162,7 @@
           </group>
         </group>
       </if>
-      <else-if type="bill book chapter graphic legal_case legislation motion_picture paper-conference report song webpage" match="any">
+      <else-if type="bill book chapter graphic legal_case legislation motion_picture paper-conference report song webpage dataset" match="any">
         <group delimiter=" ">
           <group delimiter=" ">
             <label variable="page" form="long" text-case="capitalize-first"/>

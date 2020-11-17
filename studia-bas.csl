@@ -173,7 +173,7 @@
               <text macro="container"/>
               <text macro="locator" prefix=", "/>
             </else-if>
-            <else-if type="webpage post-weblog" match="any">
+            <else-if type="webpage dataset post-weblog" match="any">
               <group>
                 <text macro="author" suffix=", "/>
                 <text macro="title" suffix=", "/>
@@ -320,7 +320,7 @@
           </group>
           <text macro="container"/>
         </else-if>
-        <else-if type="webpage post-weblog" match="any">
+        <else-if type="webpage dataset post-weblog" match="any">
           <group>
             <text macro="author-bibliography" suffix=", "/>
             <text macro="title" suffix=", "/>

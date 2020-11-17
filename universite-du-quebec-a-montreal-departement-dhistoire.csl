@@ -169,7 +169,7 @@
           <text variable="container-title" text-case="capitalize-first" font-style="italic" prefix="&#160;"/>
         </group>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <group delimiter=", ">
           <text variable="title" text-case="capitalize-first" quotes="true" font-style="normal"/>
           <text variable="container-title" text-case="capitalize-first" font-style="italic"/>
@@ -610,7 +610,7 @@
             <text macro="entry-encyclopedia-nbr-page"/>
           </group>
         </else-if>
-        <else-if type="bill book graphic legal_case legislation motion_picture report song article-magazine chapter webpage" match="any">
+        <else-if type="bill book graphic legal_case legislation motion_picture report song article-magazine chapter webpage dataset" match="any">
           <group delimiter=", ">
             <text macro="author-bib"/>
             <text macro="title"/>

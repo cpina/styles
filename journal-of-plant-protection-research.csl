@@ -61,7 +61,7 @@
   </macro>
   <macro name="title">
     <choose>
-      <if type="book webpage post post-weblog graphic" match="any">
+      <if type="book webpage dataset post post-weblog graphic" match="any">
         <text variable="title" suffix="."/>
       </if>
       <else-if variable="container-title" match="none">
@@ -131,7 +131,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage post-weblog" match="any">
+      <if type="webpage dataset post-weblog" match="any">
         <group delimiter=". ">
           <group delimiter=": ">
             <text term="available at" text-case="capitalize-first"/>
@@ -191,7 +191,7 @@
             <text macro="publisher"/>
           </group>
         </if>
-        <else-if type="webpage post post-weblog" match="any">
+        <else-if type="webpage dataset post post-weblog" match="any">
           <group prefix=" " delimiter=". ">
             <text macro="title"/>
             <text macro="edition"/>

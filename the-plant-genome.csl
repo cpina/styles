@@ -43,7 +43,7 @@
   </macro>
   <macro name="title">
     <choose>
-      <if type="book webpage" match="any">
+      <if type="book webpage dataset" match="any">
         <text variable="title" text-case="title"/>
       </if>
       <else>
@@ -121,7 +121,7 @@
               <text variable="publisher-place" prefix=", " suffix="."/>
             </group>
           </else-if>
-          <else-if type="webpage" match="any">
+          <else-if type="webpage dataset" match="any">
             <group delimiter=". " suffix=".">
               <text macro="title"/>
               <group delimiter=" ">

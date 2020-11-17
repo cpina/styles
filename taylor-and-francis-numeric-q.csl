@@ -112,7 +112,7 @@
           <text variable="publisher" suffix=", "/>
           <date date-parts="year" form="text" variable="issued"/>
         </else-if>
-        <else-if type="webpage" match="any">
+        <else-if type="webpage dataset" match="any">
           <text variable="publisher" suffix=", "/>
           <text variable="title" font-style="italic"/>
           <text variable="URL" prefix=". Available at "/>

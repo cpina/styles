@@ -49,7 +49,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage post-weblog post" match="any">
+      <if type="webpage dataset post-weblog post" match="any">
         <text variable="URL" prefix="Available from: "/>
         <date variable="accessed" form="text" prefix=" [last accessed " suffix="]"/>
       </if>

@@ -152,7 +152,7 @@
         </else-if>
       </choose>
       <choose>
-        <if type="post-weblog post webpage" match="any">
+        <if type="post-weblog post webpage dataset" match="any">
           <text variable="URL"/>
           <date form="numeric" variable="accessed" prefix="(letzter Zugriff " suffix=")"/>
         </if>

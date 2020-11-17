@@ -243,7 +243,7 @@
         <text variable="container-title" font-style="italic"/>
       </else-if>
       <!-- Pour les webpage, weblog et forum -->
-      <else-if type="webpage post post-weblog" match="any">
+      <else-if type="webpage dataset post post-weblog" match="any">
         <text variable="container-title" font-style="italic" prefix=" sur "/>
       </else-if>
       <!-- Pour les présentations -->
@@ -292,7 +292,7 @@
         <text variable="container-title" font-style="italic"/>
       </else-if>
       <!-- Pour les webpage, weblog et forum -->
-      <else-if type="webpage post post-weblog" match="any">
+      <else-if type="webpage dataset post post-weblog" match="any">
         <text variable="container-title" font-style="italic" prefix=" sur "/>
       </else-if>
       <!-- Pour les présentations -->
@@ -369,7 +369,7 @@
   <macro name="date-ndbp">
     <choose>
       <!-- Pour les webpage post de forum et post-weblog article-journal article-newspaper article-magazine bill broadcast speech personal_communication interview manuscript -->
-      <if type="webpage post post-weblog motion_picture article-journal article-newspaper article-magazine bill broadcast speech personal_communication interview manuscript" match="any">
+      <if type="webpage dataset post post-weblog motion_picture article-journal article-newspaper article-magazine bill broadcast speech personal_communication interview manuscript" match="any">
         <choose>
           <if variable="issued" match="any">
             <date variable="issued" form="text">
@@ -403,7 +403,7 @@
   <macro name="date-bib">
     <choose>
       <!-- Pour les webpage post de forum, enregistrement vidéo et post-weblog article-journal article-newspaper article-magazine bill broadcast speech personal_communication interview manuscript entry-dictionary entry-encyclopedia -->
-      <if type="webpage post post-weblog motion_picture article-journal article-newspaper article-magazine bill broadcast speech personal_communication interview manuscript entry-dictionary entry-encyclopedia" match="any">
+      <if type="webpage dataset post post-weblog motion_picture article-journal article-newspaper article-magazine bill broadcast speech personal_communication interview manuscript entry-dictionary entry-encyclopedia" match="any">
         <group delimiter=" ">
           <choose>
             <if variable="issued" match="any">
@@ -437,7 +437,7 @@
   <!-- MACRO URL/DOI (biblio seulement)-->
   <macro name="url_doi">
     <choose>
-      <if type="webpage post post-weblog motion_picture article-journal article-newspaper article-magazine bill broadcast speech personal_communication interview manuscript entry-dictionary entry-encyclopedia paper-conference" match="any">
+      <if type="webpage dataset post post-weblog motion_picture article-journal article-newspaper article-magazine bill broadcast speech personal_communication interview manuscript entry-dictionary entry-encyclopedia paper-conference" match="any">
         <!-- le "choose" qui suit permet d'éviter l'affichage du DOI pour les ressources imprimées (de même que l'interface de Zotero permet de choisir d'afficher ou non l'URL pour les articles qui contiennent une indication de pages). Pour toujours afficher le DOI quand il est disponible, supprimer <choose><if variable="page" match="none">, les balises fermantes correspondantes, ainsi que l'alternative -->
         <choose>
           <if variable="page" match="none">

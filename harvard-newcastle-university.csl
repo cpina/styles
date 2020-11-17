@@ -70,7 +70,7 @@
   </macro>
   <macro name="title">
     <choose>
-      <if type="book webpage graphic" match="any">
+      <if type="book webpage dataset graphic" match="any">
         <text variable="title" font-style="italic"/>
       </if>
       <else-if variable="container-title" match="none">
@@ -186,7 +186,7 @@
             <text macro="online"/>
           </group>
         </else-if>
-        <else-if type="article-journal article-newspaper broadcast personal_communication thesis webpage" match="any">
+        <else-if type="article-journal article-newspaper broadcast personal_communication thesis webpage dataset" match="any">
           <group suffix=".">
             <text macro="title" prefix=" "/>
             <text macro="editor" prefix=" "/>

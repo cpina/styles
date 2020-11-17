@@ -150,7 +150,7 @@
             <text variable="collection-title" prefix=" " suffix="."/>
           </group>
         </else-if>
-        <else-if type="webpage post post-weblog" match="any">
+        <else-if type="webpage dataset post post-weblog" match="any">
           <group delimiter=". ">
             <text macro="publisher"/>
             <group prefix="URL ">

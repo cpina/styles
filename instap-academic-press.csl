@@ -94,7 +94,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage post-weblog" match="any">
+      <if type="webpage dataset post-weblog" match="any">
         <text variable="URL"/>
       </if>
     </choose>
@@ -217,7 +217,7 @@
           <text variable="publisher-place"/>
         </group>
       </else-if>
-      <else-if type="webpage post-weblog post" match="any">
+      <else-if type="webpage dataset post-weblog post" match="any">
         <text variable="container-title" font-style="italic" suffix=","/>
       </else-if>
       <else>

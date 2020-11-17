@@ -148,7 +148,7 @@
           <text macro="editor"/>
         </group>
       </else-if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <group delimiter="">
           <text variable="title" text-case="capitalize-first" font-style="italic" suffix=", "/>
           <text variable="URL"/>
@@ -267,7 +267,7 @@
           </choose>
         </group>
       </else-if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <group delimiter=" " font-style="normal">
           <text value="consulté le" suffix=" " prefix=" "/>
           <date variable="accessed" form="text">
@@ -382,7 +382,7 @@
                 <text macro="yearpage-bib"/>
               </group>
             </if>
-            <else-if type="bill article-journal article-newspaper interview book graphic legal_case motion_picture paper-conference report song webpage post-weblog speech" match="any">
+            <else-if type="bill article-journal article-newspaper interview book graphic legal_case motion_picture paper-conference report song webpage dataset post-weblog speech" match="any">
               <group delimiter=", ">
                 <text macro="author-bib"/>
                 <text macro="title"/>
@@ -445,7 +445,7 @@
             <text macro="yearpage-bib"/>
           </group>
         </if>
-        <else-if type="bill chapter article-journal article-newspaper interview book graphic legal_case motion_picture paper-conference report song webpage post-weblog speech" match="any">
+        <else-if type="bill chapter article-journal article-newspaper interview book graphic legal_case motion_picture paper-conference report song webpage dataset post-weblog speech" match="any">
           <group delimiter=", ">
             <text macro="author-bib"/>
             <text macro="title"/>

@@ -100,7 +100,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage post-weblog" match="any">
+      <if type="webpage dataset post-weblog" match="any">
         <text term="available at" suffix=": " text-case="capitalize-first"/>
         <text variable="URL"/>
         <group delimiter=" " prefix=" (" suffix=")">

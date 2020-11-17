@@ -143,7 +143,7 @@
   </macro>
   <macro name="title">
     <choose>
-      <if type="report webpage" match="any">
+      <if type="report webpage dataset" match="any">
         <text variable="title" font-style="italic"/>
         <group prefix=" (" suffix=") ">
           <text variable="genre"/>
@@ -154,7 +154,7 @@
           </choose>
         </group>
       </if>
-      <else-if type="bill book graphic legal_case legislation manuscript motion_picture report song speech webpage thesis" match="any">
+      <else-if type="bill book graphic legal_case legislation manuscript motion_picture report song speech webpage dataset thesis" match="any">
         <text variable="title" font-style="italic"/>
       </else-if>
       <else>

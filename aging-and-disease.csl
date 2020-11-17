@@ -127,7 +127,7 @@
             <date date-parts="year" form="text" variable="issued"/>
           </group>
         </else-if>
-        <else-if type="webpage post post-weblog" match="any">
+        <else-if type="webpage dataset post post-weblog" match="any">
           <group>
             <text prefix="In: " variable="container-title" suffix=". " form="short"/>
             <text variable="URL" suffix=". "/>

@@ -74,7 +74,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage post-weblog" match="any">
+      <if type="webpage dataset post-weblog" match="any">
         <group delimiter=" ">
           <text variable="URL"/>
           <group delimiter=": " prefix="[" suffix="]">
@@ -206,7 +206,7 @@
           <text macro="number-of-volumes"/>
         </group>
       </if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <text variable="container-title" suffix="."/>
       </else-if>
       <else-if type="interview" match="any">

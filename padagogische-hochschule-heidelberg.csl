@@ -75,7 +75,7 @@
       <if type="article-journal">
         <text variable="collection-title" prefix="&#160;(=&#160;" suffix="),&#160;"/>
       </if>
-      <else-if type="article-newspaper bill book chapter graphic legal_case legislation motion_picture paper-conference report song webpage" match="any">
+      <else-if type="article-newspaper bill book chapter graphic legal_case legislation motion_picture paper-conference report song webpage dataset" match="any">
         <text variable="collection-title" prefix="&#160;(=&#160;" suffix=")"/>
       </else-if>
       <else>

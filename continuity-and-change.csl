@@ -280,7 +280,7 @@
       </choose>
     </group>
     <choose>
-      <if type="webpage post-weblog" match="any">
+      <if type="webpage dataset post-weblog" match="any">
         <text variable="URL" prefix=" "/>
         <group prefix=" [" suffix="]">
           <text term="accessed"/>

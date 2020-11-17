@@ -59,7 +59,7 @@
   </macro>
   <macro name="title">
     <choose>
-      <if type="book webpage" match="any">
+      <if type="book webpage dataset" match="any">
         <text variable="title" quotes="true" font-style="normal"/>
       </if>
       <else>
@@ -81,7 +81,7 @@
           <date-part name="year"/>
         </date>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <date variable="accessed">
           <date-part name="day" suffix=" "/>
           <date-part name="month" suffix=", "/>
@@ -208,7 +208,7 @@
             <text macro="issued"/>
           </group>
         </else-if>
-        <else-if type="webpage" match="any">
+        <else-if type="webpage dataset" match="any">
           <group delimiter=".">
             <text macro="title"/>
             <group delimiter=", ">

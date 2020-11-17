@@ -86,7 +86,7 @@
       <if type="bill book graphic legal_case legislation motion_picture song" match="any">
         <text variable="title" font-style="normal" suffix=". "/>
       </if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <text variable="title"/>
       </else-if>
       <else>
@@ -250,7 +250,7 @@
             <text macro="issued"/>
           </group>
         </else-if>
-        <else-if type="webpage post-weblog" match="any">
+        <else-if type="webpage dataset post-weblog" match="any">
           <group delimiter=". " suffix=". ">
             <text macro="title"/>
             <text variable="container-title" font-style="normal"/>
@@ -273,7 +273,7 @@
             <text macro="page"/>
           </group>
         </else-if>
-        <else-if type="article-magazine article-newspaper broadcast interview manuscript map patent personal_communication song speech thesis webpage" match="any">
+        <else-if type="article-magazine article-newspaper broadcast interview manuscript map patent personal_communication song speech thesis webpage dataset" match="any">
           <group delimiter=", ">
             <text macro="title"/>
             <text variable="container-title" font-style="italic"/>

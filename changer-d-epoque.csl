@@ -133,7 +133,7 @@
       <if type="book" match="any">
         <text variable="title" font-style="italic"/>
       </if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <text variable="title"/>
       </else-if>
       <else-if variable="container-title" match="none">
@@ -305,7 +305,7 @@
             <else-if type="chapter paper-conference" match="any">
               <text macro="chapter"/>
             </else-if>
-            <else-if type="webpage post-weblog" match="any">
+            <else-if type="webpage dataset post-weblog" match="any">
               <text macro="web"/>
             </else-if>
           </choose>
@@ -332,7 +332,7 @@
             <else-if type="article-journal article-magazine article-newspaper broadcast personal_communication" match="any">
               <text macro="article"/>
             </else-if>
-            <else-if type="webpage post-weblog" match="any">
+            <else-if type="webpage dataset post-weblog" match="any">
               <text macro="web"/>
             </else-if>
             <else-if type="book graphic" match="any">

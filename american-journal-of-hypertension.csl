@@ -183,7 +183,7 @@
             </date>
           </group>
         </else-if>
-        <else-if type="webpage post-weblog" match="any">
+        <else-if type="webpage dataset post-weblog" match="any">
           <group delimiter=". " prefix=" ">
             <text variable="container-title"/>
             <text variable="URL"/>

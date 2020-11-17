@@ -196,7 +196,7 @@
   </macro>
   <macro name="container-title">
     <choose>
-      <if type="legal_case webpage" match="any">
+      <if type="legal_case webpage dataset" match="any">
         <text variable="container-title"/>
       </if>
       <else>

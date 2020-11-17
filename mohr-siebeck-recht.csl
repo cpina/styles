@@ -78,7 +78,7 @@
                 </if>
               </choose>
             </else-if>
-            <else-if type="webpage" match="any">
+            <else-if type="webpage dataset" match="any">
               <text variable="title" form="short" suffix=", "/>
               <text variable="URL" prefix="&lt;" suffix="&gt;, "/>
               <date form="numeric" variable="accessed" prefix="Stand "/>

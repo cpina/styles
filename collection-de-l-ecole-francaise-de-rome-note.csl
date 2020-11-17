@@ -93,7 +93,7 @@
       <if type="book" match="any">
         <text variable="title" font-style="italic"/>
       </if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <text variable="title"/>
       </else-if>
       <else-if variable="container-title" match="none">
@@ -250,7 +250,7 @@
               <text term="page" form="short"/>
             </group>
           </if>
-          <else-if type="webpage article-journal article-magazine article-newspaper broadcast personal_communication" match="any">
+          <else-if type="webpage dataset article-journal article-magazine article-newspaper broadcast personal_communication" match="any">
             <text macro="articles"/>
           </else-if>
           <else-if type="book graphic" match="any">

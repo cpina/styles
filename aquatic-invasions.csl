@@ -105,7 +105,7 @@
     </sort>
     <layout>
       <choose>
-        <if type="webpage" match="any">
+        <if type="webpage dataset" match="any">
           <group delimiter=" " suffix=". ">
             <names variable="author">
               <substitute>

@@ -51,7 +51,7 @@
         <names variable="editor"/>
         <names variable="translator"/>
         <choose>
-          <if type="article-journal article-magazine article-newspaper broadcast interview manuscript map patent personal_communication song speech thesis webpage" match="any">
+          <if type="article-journal article-magazine article-newspaper broadcast interview manuscript map patent personal_communication song speech thesis webpage dataset" match="any">
             <text variable="container-title"/>
           </if>
         </choose>
@@ -165,7 +165,7 @@
                 <text macro="locator-or-page"/>
               </group>
             </else-if>
-            <else-if type="webpage post-weblog" match="any">
+            <else-if type="webpage dataset post-weblog" match="any">
               <group delimiter=", ">
                 <text variable="title" quotes="true"/>
                 <text variable="publisher"/>

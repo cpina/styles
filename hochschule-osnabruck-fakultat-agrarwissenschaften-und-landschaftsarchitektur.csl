@@ -192,7 +192,7 @@
         <else-if type="bill book graphic legal_case motion_picture report song" match="any">
           <text macro="book"/>
         </else-if>
-        <else-if type="webpage" match="any">
+        <else-if type="webpage dataset" match="any">
           <text macro="webpage"/>
         </else-if>
         <else-if type="paper-conference" match="any">

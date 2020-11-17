@@ -147,7 +147,7 @@
               </group>
             </group>
           </else-if>
-          <else-if type="webpage post post-weblog" match="any">
+          <else-if type="webpage dataset post post-weblog" match="any">
             <text macro="title" prefix=" "/>
             <text variable="URL" suffix="."/>
             <text value="Viewed" prefix=" "/>

@@ -48,7 +48,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="entry-dictionary post-weblog entry-encyclopedia interview webpage post" match="any">
+      <if type="entry-dictionary post-weblog entry-encyclopedia interview webpage dataset post" match="any">
         <group>
           <text value="Available at:" suffix=" "/>
           <text variable="URL" text-decoration="underline"/>

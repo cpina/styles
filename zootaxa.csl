@@ -65,7 +65,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage book post post-weblog" match="any">
+      <if type="webpage dataset book post post-weblog" match="any">
         <choose>
           <if variable="URL">
             <group delimiter=" ">

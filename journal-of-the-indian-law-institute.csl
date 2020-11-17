@@ -217,7 +217,7 @@
       </choose>
     </group>
     <choose>
-      <if type="webpage post-weblog post" match="any">
+      <if type="webpage dataset post-weblog post" match="any">
         <group delimiter=" ">
           <group delimiter=": ">
             <text term="available at" font-style="italic"/>

@@ -90,7 +90,7 @@
   </macro>
   <macro name="access-date">
     <choose>
-      <if type="webpage post post-weblog" match="any">
+      <if type="webpage dataset post post-weblog" match="any">
         <group delimiter=" ">
           <text value="See"/>
           <text variable="URL"/>
@@ -278,7 +278,7 @@
           <text variable="URL" prefix=". Available at " font-style="normal"/>
           <text macro="access-date"/>
         </else-if>
-        <else-if type="webpage post post-weblog" match="any">
+        <else-if type="webpage dataset post post-weblog" match="any">
           <group delimiter=". ">
             <text variable="container-title"/>
             <text macro="access-date"/>

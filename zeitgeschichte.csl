@@ -372,7 +372,7 @@ Sammelwerke bzw. Beitrag in Sammelwerken: Eintragart Buch bzw. Buchteil -- im Zo
         </else>
       </choose>
       <choose>
-        <if type="webpage" match="any">
+        <if type="webpage dataset" match="any">
           <choose>
             <if match="any" variable="URL">
               <text variable="URL" prefix=", URL: "/>

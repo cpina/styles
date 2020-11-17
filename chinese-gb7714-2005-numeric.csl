@@ -200,7 +200,7 @@
       <text macro="pageField" prefix=": "/>
       <text macro="referenceDate"/>
       <choose>
-        <if type="webpage" match="any">
+        <if type="webpage dataset" match="any">
           <text macro="access" prefix=". "/>
         </if>
       </choose>

@@ -147,7 +147,7 @@
             <text macro="publication-details"/>
           </group>
         </else-if>
-        <else-if type="webpage" match="any">
+        <else-if type="webpage dataset" match="any">
           <group delimiter=". ">
             <text variable="title"/>
             <text macro="access"/>

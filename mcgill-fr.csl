@@ -569,7 +569,7 @@ all the other tests should have been done... -->
                       <text macro="pinpoint"/>
                       <text variable="note" prefix=", "/>
                     </else-if>
-                    <else-if type="webpage post-weblog" match="any">
+                    <else-if type="webpage dataset post-weblog" match="any">
                       <text macro="render-webpage"/>
                       <text macro="pinpoint"/>
                       <text variable="note" prefix=", "/>
@@ -656,7 +656,7 @@ all the other tests should have been done... -->
                 <text macro="author-bib" strip-periods="true"/>
                 <text macro="render-book"/>
               </else-if>
-              <else-if type="webpage post-weblog" match="any">
+              <else-if type="webpage dataset post-weblog" match="any">
                 <text macro="author-bib" strip-periods="true"/>
                 <text macro="render-webpage"/>
               </else-if>

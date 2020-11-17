@@ -251,7 +251,7 @@
           <text variable="title" form="short"/>
           <text value=")" suffix=" "/>
         </else-if>
-        <else-if type="webpage" match="any">
+        <else-if type="webpage dataset" match="any">
           <group delimiter=", ">
             <text macro="author"/>
             <text variable="title"/>

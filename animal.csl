@@ -124,7 +124,7 @@
             <text macro="publisher" prefix=" "/>
           </group>
         </else-if>
-        <else-if type="post-weblog webpage" match="any">
+        <else-if type="post-weblog webpage dataset" match="any">
           <group delimiter=". " prefix=". ">
             <text variable="title"/>
             <text variable="container-title"/>

@@ -190,7 +190,7 @@
                 <text macro="locator"/>
               </group>
             </else-if>
-            <else-if type="webpage post-weblog" match="any">
+            <else-if type="webpage dataset post-weblog" match="any">
               <group delimiter=", ">
                 <text macro="author"/>
                 <text macro="title"/>
@@ -282,7 +282,7 @@
           </group>
           <text macro="container"/>
         </else-if>
-        <else-if type="webpage post-weblog" match="any">
+        <else-if type="webpage dataset post-weblog" match="any">
           <group delimiter=", ">
             <text macro="author-bibliography"/>
             <text macro="title"/>

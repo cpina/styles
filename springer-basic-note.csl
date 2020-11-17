@@ -160,7 +160,7 @@
               <text variable="publisher-place"/>
             </group>
           </else-if>
-          <else-if type="webpage post-weblog" match="any">
+          <else-if type="webpage dataset post-weblog" match="any">
             <group prefix=". " delimiter=". ">
               <text prefix="In: " variable="container-title" form="short"/>
               <text variable="URL"/>

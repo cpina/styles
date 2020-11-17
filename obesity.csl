@@ -124,7 +124,7 @@
             </group>
           </group>
         </else-if>
-        <else-if type="webpage" match="any">
+        <else-if type="webpage dataset" match="any">
           <group delimiter=". " prefix=" ">
             <date variable="accessed" prefix="(" suffix=")">
               <date-part name="year"/>

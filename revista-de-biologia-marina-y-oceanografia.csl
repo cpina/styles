@@ -62,7 +62,7 @@
       <if type="article-journal" match="any">
         <text variable="DOI" prefix="&lt;https://doi.org/" suffix="&gt;"/>
       </if>
-      <else-if type="webpage post post-weblog" match="any">
+      <else-if type="webpage dataset post post-weblog" match="any">
         <group delimiter=" " suffix=".">
           <text variable="URL" prefix="&lt;" suffix="&gt;"/>
           <group prefix="(last accessed " suffix=")">

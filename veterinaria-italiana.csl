@@ -162,7 +162,7 @@
               </group>
             </group>
           </else-if>
-          <else-if type="webpage post post-weblog" match="any">
+          <else-if type="webpage dataset post post-weblog" match="any">
             <group delimiter=" " prefix="(" suffix=")">
               <text variable="URL"/>
               <text term="accessed"/>

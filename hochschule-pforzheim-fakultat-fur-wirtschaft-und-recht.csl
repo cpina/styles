@@ -52,7 +52,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage post-weblog" match="any">
+      <if type="webpage dataset post-weblog" match="any">
         <choose>
           <if variable="URL">
             <group delimiter=", ">
@@ -110,7 +110,7 @@
           </date>
         </group>
       </if>
-      <else-if type="webpage post-weblog post" match="any">
+      <else-if type="webpage dataset post-weblog post" match="any">
         <text value="URL" prefix="(" suffix=")"/>
       </else-if>
       <else>
@@ -220,7 +220,7 @@
                   </group>
                 </group>
               </else-if>
-              <else-if type="webpage post-weblog" match="any">
+              <else-if type="webpage dataset post-weblog" match="any">
                 <group delimiter=", " suffix=".">
                   <text macro="title"/>
                   <text variable="container-title"/>

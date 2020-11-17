@@ -52,7 +52,7 @@
       <if variable="DOI">
         <text variable="DOI" prefix="DOI: "/>
       </if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <group delimiter=" ">
           <text term="available at"/>
           <text variable="URL"/>

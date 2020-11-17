@@ -45,7 +45,7 @@
       <if variable="DOI" match="any">
         <text variable="DOI" prefix="https://doi.org/"/>
       </if>
-      <else-if type="webpage post post-weblog" match="any">
+      <else-if type="webpage dataset post post-weblog" match="any">
         <text value="Available at:" suffix=" "/>
         <text variable="URL"/>
         <group prefix=" [" suffix="]">

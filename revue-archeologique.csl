@@ -107,7 +107,7 @@
       <if type="book" match="any">
         <text variable="title" font-style="italic"/>
       </if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <text variable="title"/>
       </else-if>
       <else-if variable="container-title" match="none">
@@ -176,7 +176,7 @@
                 <text macro="year-date"/>
               </group>
             </if>
-            <else-if type="article-journal article-magazine article-newspaper broadcast personal_communication thesis webpage" match="any">
+            <else-if type="article-journal article-magazine article-newspaper broadcast personal_communication thesis webpage dataset" match="any">
               <group delimiter=", ">
                 <text macro="title" quotes="true"/>
                 <text variable="container-title" form="short" font-style="italic"/>
@@ -279,7 +279,7 @@
                 <text macro="year-date"/>
               </group>
             </if>
-            <else-if type="article-journal article-magazine article-newspaper broadcast personal_communication thesis webpage" match="any">
+            <else-if type="article-journal article-magazine article-newspaper broadcast personal_communication thesis webpage dataset" match="any">
               <group delimiter=", ">
                 <text macro="title" quotes="true"/>
                 <text variable="container-title" form="short" font-style="italic"/>

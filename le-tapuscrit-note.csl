@@ -109,7 +109,7 @@
           <text variable="container-title" text-case="capitalize-first" font-style="italic"/>
         </group>
       </else-if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <group delimiter="">
           <text variable="title" text-case="capitalize-first" font-style="italic" suffix=", "/>
           <text variable="URL"/>
@@ -239,7 +239,7 @@
           </choose>
         </group>
       </else-if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <group delimiter=" " prefix="(" suffix=")">
           <text value="consulté le"/>
           <date variable="accessed" form="text">
@@ -323,7 +323,7 @@
           </choose>
         </group>
       </else-if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <group delimiter=" ">
           <text value="consulté le" suffix=" " prefix=" "/>
           <date variable="accessed" form="text">

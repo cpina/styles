@@ -119,7 +119,7 @@
           <text variable="page"/>
         </group>
       </else-if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <group delimiter=" " prefix=". ">
           <text variable="URL" prefix="URL: "/>
           <date form="numeric" variable="accessed" prefix="[" suffix="]"/>
@@ -136,7 +136,7 @@
           <text variable="number" prefix="Nr. "/>
         </group>
       </if>
-      <else-if type="book graphic  motion_picture report song manuscript speech thesis webpage" match="any">
+      <else-if type="book graphic  motion_picture report song manuscript speech thesis webpage dataset" match="any">
         <text variable="title" font-style="italic"/>
       </else-if>
       <else>
@@ -334,7 +334,7 @@
   <macro name="container">
     <group>
       <choose>
-        <if type="chapter paper-conference entry-encyclopedia webpage post-weblog" match="any">
+        <if type="chapter paper-conference entry-encyclopedia webpage dataset post-weblog" match="any">
           <text term="in" text-case="capitalize-first" suffix=": "/>
         </if>
       </choose>

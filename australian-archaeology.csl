@@ -75,7 +75,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage post post-weblog" match="any">
+      <if type="webpage dataset post post-weblog" match="any">
         <group delimiter=" ">
           <text term="retrieved" text-case="capitalize-first"/>
           <date form="text" variable="accessed"/>
@@ -171,7 +171,7 @@
           <text variable="container-title" font-style="italic"/>
         </group>
       </else-if>
-      <else-if type="webpage post post-weblog" match="any">
+      <else-if type="webpage dataset post post-weblog" match="any">
         <text variable="container-title"/>
       </else-if>
     </choose>

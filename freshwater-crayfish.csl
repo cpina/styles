@@ -92,7 +92,7 @@
           <text variable="DOI"/>
         </group>
       </if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <group>
           <text variable="URL"/>
           <group prefix="[" suffix="]">

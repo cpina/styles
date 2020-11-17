@@ -89,12 +89,12 @@
       <if variable="URL">
         <group delimiter=" ">
           <choose>
-            <if type="webpage post-weblog" match="any">
+            <if type="webpage dataset post-weblog" match="any">
               <text term="online" prefix=" [" suffix="]"/>
             </if>
           </choose>
           <choose>
-            <if type="article-newspaper webpage post-weblog" match="any">
+            <if type="article-newspaper webpage dataset post-weblog" match="any">
               <group delimiter=". ">
                 <group delimiter=" " prefix=" ">
                   <text term="accessed"/>
@@ -114,7 +114,7 @@
   </macro>
   <macro name="title">
     <choose>
-      <if type="bill book graphic legal_case legislation  report song thesis webpage" match="any">
+      <if type="bill book graphic legal_case legislation  report song thesis webpage dataset" match="any">
         <text variable="title" font-style="italic"/>
       </if>
       <else-if type="motion_picture">
@@ -270,7 +270,7 @@
     <choose>
       <if variable="container-title">
         <choose>
-          <if type="webpage post-weblog" match="any">
+          <if type="webpage dataset post-weblog" match="any">
             <text variable="container-title"/>
           </if>
           <else>

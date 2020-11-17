@@ -49,7 +49,7 @@
           </if>
           <else-if variable="URL">
             <choose>
-              <if type="webpage post-weblog article-journal" match="any">
+              <if type="webpage dataset post-weblog article-journal" match="any">
                 <group delimiter=". ">
                   <text variable="URL"/>
                   <group>

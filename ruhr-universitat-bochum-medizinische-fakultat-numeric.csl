@@ -85,7 +85,7 @@
           <if variable="DOI"/>
           <else>
             <choose>
-              <if type="webpage post post-weblog" match="any">
+              <if type="webpage dataset post post-weblog" match="any">
                 <group delimiter=". ">
                   <group delimiter=" " prefix="(" suffix=")">
                     <text term="accessed" text-case="capitalize-first"/>
@@ -126,7 +126,7 @@
           <text variable="number" prefix="No. "/>
         </group>
       </if>
-      <else-if type="post-weblog webpage" match="any">
+      <else-if type="post-weblog webpage dataset" match="any">
         <text variable="genre" prefix=" [" suffix="]"/>
       </else-if>
       <else-if variable="version">

@@ -132,7 +132,7 @@
             </date>
           </group>
         </else-if>
-        <else-if type="webpage post-weblog post speech" match="any">
+        <else-if type="webpage dataset post-weblog post speech" match="any">
           <text variable="title" prefix=" " suffix="."/>
           <text macro="access" prefix=" "/>
         </else-if>

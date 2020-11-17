@@ -164,7 +164,7 @@
         </else-if>
       </choose>
       <choose>
-        <if type="post-weblog webpage" match="any">
+        <if type="post-weblog webpage dataset" match="any">
           <date delimiter=" " variable="issued">
             <date-part name="month"/>
             <date-part name="day"/>
@@ -188,10 +188,10 @@
             <if variable="DOI">
               <text variable="DOI" prefix="doi:"/>
             </if>
-            <else-if type="webpage" match="any">
+            <else-if type="webpage dataset" match="any">
               <text variable="URL" prefix="available at "/>
               <choose>
-                <if type="webpage" match="any">
+                <if type="webpage dataset" match="any">
                   <date form="text" variable="accessed" prefix="Last updated "/>
                 </if>
               </choose>
@@ -245,7 +245,7 @@
       <else-if type="legal_case interview" match="any">
         <text variable="title"/>
       </else-if>
-      <else-if type="article-journal webpage" match="any">
+      <else-if type="article-journal webpage dataset" match="any">
         <text suffix="," variable="title" quotes="true"/>
       </else-if>
       <else-if type="report" match="any">

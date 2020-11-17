@@ -160,7 +160,7 @@
               <text variable="page"/>
             </group>
           </else-if>
-          <else-if type="webpage" match="any">
+          <else-if type="webpage dataset" match="any">
             <group delimiter=". ">
               <text variable="title"/>
               <text variable="container-title" form="short"/>

@@ -431,7 +431,7 @@ CONTAINER (Sammelband oder Zeitschrift ...)
         <text macro="secondary-container-contributors" prefix=", "/>
       </if>
       <!-- Für Artikel gilt: -->
-      <else-if type="article-journal article-magazine article-newspaper broadcast interview manuscript map patent personal_communication song speech thesis article webpage" match="any">
+      <else-if type="article-journal article-magazine article-newspaper broadcast interview manuscript map patent personal_communication song speech thesis article webpage dataset" match="any">
         <!-- Container-Titel -->
         <text variable="container-title" form="short" font-style="italic" prefix="in: " suffix=" "/>
       </else-if>
@@ -519,7 +519,7 @@ Workaround für Jahresbereiche: 1992_&_1994 schreiben und danach "Suchen und Ers
         <text macro="collection" prefix=" (" suffix=")"/>
       </if>
       <!-- Für Webseiten gilt: -->
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <!-- Band und Nummer -->
         <group delimiter="/">
           <text variable="volume" font-style="italic"/>
@@ -571,7 +571,7 @@ SEITENZAHLEN, URL, ZUGRIFFSDATUM
 	   der Gesamtumfang gemeint ist. Geschütztes Leerzeichen.
 	   Nur bei Lexikon-Artikel werden statt Seitenbereichsangaben Spaltenbereichsangaben
 	   verwendet, wenn Spalten in der genauen Ortsbezeichnung (Locator) verwendet werden.-->
-      <if type="article-journal article-magazine article-newspaper broadcast interview manuscript map patent personal_communication song speech thesis article webpage chapter paper-conference" match="any">
+      <if type="article-journal article-magazine article-newspaper broadcast interview manuscript map patent personal_communication song speech thesis article webpage dataset chapter paper-conference" match="any">
         <label variable="page" form="short" suffix=".&#160;" strip-periods="true"/>
         <text variable="page"/>
       </if>
@@ -585,7 +585,7 @@ SEITENZAHLEN, URL, ZUGRIFFSDATUM
   <macro name="access">
     <choose>
       <!-- Für Webseiten, Dissertation, Magazin-, Zeitungs- und Journal-Artikel wird die URL, wenn vorhanden angezeigt -->
-      <if type="webpage thesis article article-magazine article-newspaper article-journal manuscript" match="any">
+      <if type="webpage dataset thesis article article-magazine article-newspaper article-journal manuscript" match="any">
         <text variable="URL"/>
         <group prefix=" (" suffix=")" delimiter=" ">
           <text term="accessed" text-case="lowercase"/>
@@ -656,7 +656,7 @@ ERSTELLUNG DER FUßNOTEN
                 </if>
               </choose>
             </if>
-            <else-if type="article-journal article-magazine article-newspaper broadcast interview manuscript map patent personal_communication song speech webpage" match="any">
+            <else-if type="article-journal article-magazine article-newspaper broadcast interview manuscript map patent personal_communication song speech webpage dataset" match="any">
               <choose>
                 <if variable="page" match="all">
                   <text macro="citation-locator" prefix=", hier "/>

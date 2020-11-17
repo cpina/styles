@@ -172,7 +172,7 @@
                 <text macro="year-date"/>
               </group>
             </if>
-            <else-if type="webpage post post-weblog" match="any">
+            <else-if type="webpage dataset post post-weblog" match="any">
               <group delimiter=" ">
                 <group suffix="," delimiter=", ">
                   <choose>

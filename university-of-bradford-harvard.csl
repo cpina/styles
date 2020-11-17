@@ -67,7 +67,7 @@
   </macro>
   <macro name="title">
     <choose>
-      <if type="bill book graphic legal_case legislation motion_picture report song thesis webpage post post-weblog" match="any">
+      <if type="bill book graphic legal_case legislation motion_picture report song thesis webpage dataset post post-weblog" match="any">
         <text variable="title" font-style="italic" suffix=". "/>
       </if>
       <else>
@@ -136,7 +136,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="post post-weblog webpage" match="any">
+      <if type="post post-weblog webpage dataset" match="any">
         <choose>
           <if variable="URL">
             <text variable="URL" suffix=" "/>

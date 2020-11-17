@@ -111,7 +111,7 @@
       <if type="book thesis manuscript" match="any">
         <text variable="title" font-style="italic"/>
       </if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <group delimiter=" ">
           <text variable="title"/>
           <text macro="data-accesso-sito"/>
@@ -266,7 +266,7 @@
               </if>
             </choose>
             <choose>
-              <if type="webpage" match="any">
+              <if type="webpage dataset" match="any">
                 <text variable="URL"/>
               </if>
             </choose>

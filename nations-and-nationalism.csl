@@ -80,7 +80,7 @@
   </macro>
   <macro name="title">
     <choose>
-      <if type="article-journal webpage post-weblog post chapter paper-conference" match="any">
+      <if type="article-journal webpage dataset post-weblog post chapter paper-conference" match="any">
         <text variable="title" text-case="title" quotes="true"/>
       </if>
       <else-if type="book thesis" match="any">
@@ -179,7 +179,7 @@
               <text macro="publisher"/>
             </group>
           </else-if>
-          <else-if type="webpage post post-weblog" match="any">
+          <else-if type="webpage dataset post post-weblog" match="any">
             <group delimiter=", ">
               <text macro="title" font-style="italic"/>
               <group delimiter=". ">

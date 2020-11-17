@@ -564,7 +564,7 @@ Not implemented: "cited to" for cases construct short casenames adding ref to ar
                       <text macro="pinpoint"/>
                       <text variable="note"/>
                     </else-if>
-                    <else-if type="webpage post-weblog" match="any">
+                    <else-if type="webpage dataset post-weblog" match="any">
                       <text macro="render-webpage"/>
                       <text macro="pinpoint"/>
                       <text variable="note"/>
@@ -651,7 +651,7 @@ Not implemented: "cited to" for cases construct short casenames adding ref to ar
                 <text macro="author-bib" strip-periods="true"/>
                 <text macro="render-book"/>
               </else-if>
-              <else-if type="webpage post-weblog" match="any">
+              <else-if type="webpage dataset post-weblog" match="any">
                 <text macro="author-bib" strip-periods="true"/>
                 <text macro="render-webpage"/>
               </else-if>

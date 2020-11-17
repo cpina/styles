@@ -58,7 +58,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage" match="any">
+      <if type="webpage dataset" match="any">
         <text variable="URL" prefix="Available at: "/>
         <group prefix=" [" suffix="]">
           <text term="accessed" text-case="capitalize-first" suffix=" "/>

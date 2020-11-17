@@ -81,7 +81,7 @@
       <if variable="DOI">
         <text variable="DOI" prefix="https://doi.org/"/>
       </if>
-      <else-if type="webpage post-weblog post" match="any">
+      <else-if type="webpage dataset post-weblog post" match="any">
         <group delimiter=": ">
           <text value="URL"/>
           <text variable="URL"/>

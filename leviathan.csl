@@ -131,7 +131,7 @@
         </if>
         <else>
           <choose>
-            <if type="webpage" match="any">
+            <if type="webpage dataset" match="any">
               <text variable="title" quotes="false" font-style="italic" suffix=" "/>
               <text macro="webpage-info"/>
             </if>
@@ -198,7 +198,7 @@
             </group>
           </group>
         </else-if>
-        <else-if type="webpage" match="any">
+        <else-if type="webpage dataset" match="any">
           <text variable="title" quotes="false" font-style="italic" suffix=" "/>
           <text macro="webpage-info"/>
         </else-if>

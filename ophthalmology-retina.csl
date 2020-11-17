@@ -96,7 +96,7 @@
             <text variable="page" prefix=":"/>
           </group>
         </if>
-        <else-if type="webpage" match="any">
+        <else-if type="webpage dataset" match="any">
           <text variable="title" suffix=". "/>
           <text variable="URL" suffix=" ; "/>
           <date date-parts="year" form="numeric" variable="issued">

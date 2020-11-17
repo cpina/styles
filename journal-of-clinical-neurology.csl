@@ -43,7 +43,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage post-weblog" match="any">
+      <if type="webpage dataset post-weblog" match="any">
         <group delimiter=" ">
           <text term="available at" text-case="capitalize-first" suffix=":"/>
           <text variable="URL" suffix="."/>
@@ -217,7 +217,7 @@
             </date>
           </group>
         </else-if>
-        <else-if type="webpage post post-weblog" match="any">
+        <else-if type="webpage dataset post post-weblog" match="any">
           <text variable="container-title" prefix=" " suffix="."/>
         </else-if>
         <else>

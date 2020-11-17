@@ -249,7 +249,7 @@
           <text macro="locators"/>
           <text macro="publisher" suffix="."/>
         </else-if>
-        <else-if type="article-journal article-magazine article-newspaper broadcast interview manuscript map patent personal_communication song speech thesis webpage" match="any">
+        <else-if type="article-journal article-magazine article-newspaper broadcast interview manuscript map patent personal_communication song speech thesis webpage dataset" match="any">
           <group delimiter=", ">
             <text macro="issued"/>
             <text macro="title"/>

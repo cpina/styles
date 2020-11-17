@@ -178,7 +178,7 @@
             <names variable="author" prefix="invs.: "/>
           </group>
         </else-if>
-        <else-if type="webpage post-weblog" match="any">
+        <else-if type="webpage dataset post-weblog" match="any">
           <group delimiter=", ">
             <text variable="title" quotes="true"/>
             <text variable="container-title" font-style="italic"/>

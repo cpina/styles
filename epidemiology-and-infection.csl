@@ -207,7 +207,7 @@
           <text macro="journal-location"/>
           <text macro="pages"/>
           <choose>
-            <if type="webpage post-weblog" match="any">
+            <if type="webpage dataset post-weblog" match="any">
               <group delimiter=". ">
                 <text variable="URL" prefix="(" suffix=")"/>
                 <group delimiter=" ">

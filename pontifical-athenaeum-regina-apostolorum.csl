@@ -323,7 +323,7 @@
   </macro>
   <macro name="access-note">
     <choose>
-      <if type="webpage post-weblog" match="any">
+      <if type="webpage dataset post-weblog" match="any">
         <text variable="container-title" font-style="italic" suffix=", "/>
         <text term="in" suffix=" " text-case="lowercase"/>
         <text variable="URL"/>

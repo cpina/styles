@@ -31,7 +31,7 @@
   </locale>
   <macro name="author">
     <choose>
-      <if type="article article-journal article-magazine article-newspaper book chapter graphic interview broadcast entry-encyclopedia figure legal_case manuscript musical_score pamphlet paper-conference patent personal_communication post post-weblog report review review-book speech thesis webpage song motion_picture map bill legislation" match="any">
+      <if type="article article-journal article-magazine article-newspaper book chapter graphic interview broadcast entry-encyclopedia figure legal_case manuscript musical_score pamphlet paper-conference patent personal_communication post post-weblog report review review-book speech thesis webpage dataset song motion_picture map bill legislation" match="any">
         <names variable="author" font-style="italic">
           <name delimiter=" &#8211; " delimiter-precedes-et-al="never" initialize-with=". " name-as-sort-order="all" sort-separator=",  "/>
           <substitute>
@@ -85,7 +85,7 @@
   </macro>
   <macro name="access">
     <choose>
-      <if type="webpage article post-weblog" match="any">
+      <if type="webpage dataset article post-weblog" match="any">
         <group delimiter=". ">
           <group delimiter=": ">
             <text value="Dostupné na" text-case="capitalize-first"/>
@@ -103,7 +103,7 @@
             <if type="article-journal article article-magazine article-newspaper">
               <text variable="container-title" form="short" strip-periods="true" suffix=","/>
             </if>
-            <else-if type="webpage post-weblog" match="any">
+            <else-if type="webpage dataset post-weblog" match="any">
               <text variable="container-title" suffix=" [web]"/>
             </else-if>
             <else>
@@ -182,7 +182,7 @@
           <date-part name="year"/>
         </date>
       </else-if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <choose>
           <if match="any" variable="issued">
             <date date-parts="year" form="text" variable="issued" suffix=". "/>
@@ -279,7 +279,7 @@
           <choose>
             <if match="none" variable="author">
               <choose>
-                <if type="webpage post post-weblog dataset" match="any">
+                <if type="webpage dataset post post-weblog dataset" match="any">
                   <text variable="URL" form="short"/>
                 </if>
                 <else-if type="interview" match="any">

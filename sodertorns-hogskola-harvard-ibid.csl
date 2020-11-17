@@ -110,7 +110,7 @@
     <choose>
       <if variable="URL">
         <choose>
-          <if type="webpage post-weblog" match="any">
+          <if type="webpage dataset post-weblog" match="any">
             <group>
               <text variable="URL"/>
             </group>
@@ -137,7 +137,7 @@
           </group>
         </group>
       </if>
-      <else-if type="bill book graphic legal_case legislation map report song speech webpage" match="any">
+      <else-if type="bill book graphic legal_case legislation map report song speech webpage dataset" match="any">
         <group delimiter=". ">
           <group delimiter=", ">
             <group delimiter=" ">

@@ -104,7 +104,7 @@
       <if type="paper-conference article-journal entry-encyclopedia entry-dictionary" match="any">
         <text variable="title" quotes="false"/>
       </if>
-      <else-if type="bill book graphic legal_case legislation motion_picture report song webpage post post-weblog" match="any">
+      <else-if type="bill book graphic legal_case legislation motion_picture report song webpage dataset post post-weblog" match="any">
         <group delimiter=" ">
           <text variable="title" font-style="italic"/>
           <choose>
@@ -190,7 +190,7 @@
   </macro>
   <macro name="container">
     <choose>
-      <if type="post post-weblog webpage" match="any">
+      <if type="post post-weblog webpage dataset" match="any">
         <text variable="container-title" font-style="normal"/>
       </if>
       <else>
@@ -331,7 +331,7 @@
                   <text variable="page"/>
                 </group>
               </else-if>
-              <else-if type="webpage post post-weblog" match="any">
+              <else-if type="webpage dataset post post-weblog" match="any">
                 <group delimiter=", ">
                   <text macro="title"/>
                   <text macro="container"/>
@@ -447,7 +447,7 @@
               </group>
             </group>
           </else-if>
-          <else-if type="webpage post post-weblog" match="any">
+          <else-if type="webpage dataset post post-weblog" match="any">
             <group delimiter=", ">
               <group delimiter=" ">
                 <text term="retrieved" text-case="capitalize-first"/>

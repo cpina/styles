@@ -184,7 +184,7 @@
               </group>
             </group>
           </else-if>
-          <else-if type="webpage" match="any">
+          <else-if type="webpage dataset" match="any">
             <group>
               <text variable="title" font-style="italic" suffix=". "/>
               <text variable="container-title" form="long" suffix=". "/>

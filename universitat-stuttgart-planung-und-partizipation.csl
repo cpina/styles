@@ -297,7 +297,7 @@
           <text macro="u__event"/>
         </group>
       </else-if>
-      <else-if type="broadcast webpage" match="any">
+      <else-if type="broadcast webpage dataset" match="any">
         <text variable="URL" prefix="In: "/>
         <date form="text" variable="accessed" prefix=", zugegriffen am "/>
       </else-if>

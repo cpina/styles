@@ -53,7 +53,7 @@
           <text variable="collection-title"/>
         </group>
       </else-if>
-      <else-if type="webpage" match="any">
+      <else-if type="webpage dataset" match="any">
         <group delimiter=", ">
           <text variable="container-title"/>
           <text variable="collection-title"/>
@@ -103,7 +103,7 @@
           <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
             <text variable="title" form="short" font-style="italic"/>
           </if>
-          <else-if type="webpage" match="any">
+          <else-if type="webpage dataset" match="any">
             <text variable="container-title"/>
           </else-if>
           <else-if type="dataset" match="any">
@@ -121,7 +121,7 @@
       <if variable="DOI">
         <text variable="DOI" prefix="https://doi.org/"/>
       </if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <group delimiter=" ">
           <text value="Dostopno na: "/>
           <text variable="URL"/>

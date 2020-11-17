@@ -130,7 +130,7 @@
       <else-if type="patent" match="any">
         <text variable="title" form="long"/>
       </else-if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <text variable="container-title" suffix=", "/>
       </else-if>
       <else>
@@ -314,7 +314,7 @@
       <if type="chapter" match="any">
         <text variable="container-title" form="long" font-style="normal"/>
       </if>
-      <else-if type="webpage post-weblog" match="any">
+      <else-if type="webpage dataset post-weblog" match="any">
         <text variable="title" prefix=" "/>
         <text term="online" text-case="capitalize-first" prefix=" [" suffix="]"/>
       </else-if>
@@ -389,7 +389,7 @@
               </group>
             </if>
             <else-if type="chapter" match="any"/>
-            <else-if type="webpage post-weblog" match="any">
+            <else-if type="webpage dataset post-weblog" match="any">
               <group delimiter=" " prefix=" ">
                 <text term="available at" text-case="capitalize-first"/>
                 <text variable="URL"/>

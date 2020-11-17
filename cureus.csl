@@ -87,7 +87,7 @@
           </else>
         </choose>
       </if>
-      <else-if type="webpage patent" match="any">
+      <else-if type="webpage dataset patent" match="any">
         <date date-parts="year" form="text" variable="issued" prefix="(" suffix="). "/>
         <group>
           <text term="accessed" text-case="capitalize-first" suffix=": "/>

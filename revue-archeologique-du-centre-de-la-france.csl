@@ -161,7 +161,7 @@
   </macro>
   <macro name="journal-title">
     <choose>
-      <if type="chapter paper-conference article-journal article-magazine article-newspaper webpage" match="any">
+      <if type="chapter paper-conference article-journal article-magazine article-newspaper webpage dataset" match="any">
         <group suffix=", ">
           <text variable="container-title" font-style="italic" form="short"/>
           <choose>
@@ -306,7 +306,7 @@
             <text macro="publisher"/>
             <text variable="page" prefix=" p. " suffix="."/>
           </else-if>
-          <else-if type="webpage" match="any">
+          <else-if type="webpage dataset" match="any">
             <group prefix=" ">
               <text macro="editor"/>
               <text macro="journal-title"/>

@@ -98,7 +98,7 @@
             <text variable="genre" suffix="."/>
             <text variable="publisher"/>
           </else-if>
-          <else-if type="webpage post-weblog" match="any">
+          <else-if type="webpage dataset post-weblog" match="any">
             <group delimiter=". ">
               <text variable="title"/>
               <text variable="container-title"/>

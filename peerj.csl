@@ -121,7 +121,7 @@
             </group>
           </group>
         </else-if>
-        <else-if type="post-weblog webpage" match="any">
+        <else-if type="post-weblog webpage dataset" match="any">
           <group>
             <text macro="title"/>
             <group>

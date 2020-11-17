@@ -204,7 +204,7 @@
           <text variable="number"/>
           <text macro="issued"/>
         </else-if>
-        <else-if type="broadcast interview manuscript map patent personal_communication speech thesis webpage" match="any">
+        <else-if type="broadcast interview manuscript map patent personal_communication speech thesis webpage dataset" match="any">
           <group delimiter=", ">
             <text macro="title"/>
             <text variable="container-title" font-style="italic"/>

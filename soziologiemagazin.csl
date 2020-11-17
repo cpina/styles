@@ -133,7 +133,7 @@
       <if variable="DOI">
         <text variable="DOI" prefix="doi:"/>
       </if>
-      <else-if type="webpage article article-newspaper article-magazine" match="any">
+      <else-if type="webpage dataset article article-newspaper article-magazine" match="any">
         <choose>
           <if variable="URL">
             <group delimiter=" ">
